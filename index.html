@@ -96,19 +96,15 @@
   .modal-body{margin-top:16px;font-size:14.5px;line-height:1.6;color:var(--text)}
   .modal-teams{display:flex;flex-wrap:wrap;gap:7px;margin-top:16px}
   .modal-teams span{font-size:12.5px;background:var(--panel2);border:1px solid var(--line);border-radius:20px;padding:4px 10px}
-  /* Points table */
-  .ptable-wrap{overflow-x:auto}
-  table.ptable{width:100%;border-collapse:separate;border-spacing:0 9px;min-width:560px}
-  .ptable th{text-align:left;font-size:11px;text-transform:uppercase;letter-spacing:.1em;color:var(--muted);padding:0 12px 4px;font-weight:700}
-  .ptable th.t-num{text-align:right;width:70px}
-  .ptable td{background:var(--panel);border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:12px;vertical-align:middle}
-  .ptable td.r-rank{border-left:5px solid var(--pc);border-radius:12px 0 0 12px;font-weight:800;color:var(--muted);width:42px;text-align:center;font-size:16px}
-  .ptable td.r-num{text-align:right;font-weight:700;width:70px}
-  .ptable td.r-total{border-radius:0 12px 12px 0;text-align:right;font-size:23px;font-weight:800;color:var(--gold);width:74px}
-  .ptable tr.lead td{background:#1c1d12;border-color:var(--gold)}
-  .ptable tr.lead td.r-rank{border-left-color:var(--gold);color:var(--gold)}
-  .r-top{display:flex;align-items:center;gap:8px;font-size:16px}
-  .r-top .dot{width:10px;height:10px}
+  /* Points table — card rows, reflow on mobile (no horizontal scroll) */
+  .ptable{display:flex;flex-direction:column;gap:9px}
+  .prow{display:flex;align-items:center;gap:12px;background:var(--panel);border:1px solid var(--line);border-left:5px solid var(--pc);border-radius:12px;padding:12px 14px}
+  .prow.lead{background:#1c1d12;border-color:var(--gold)}
+  .prank{font-size:18px;font-weight:800;color:var(--muted);width:22px;text-align:center;flex:0 0 auto}
+  .prow.lead .prank{color:var(--gold)}
+  .pmain{flex:1;min-width:0}
+  .pname{display:flex;align-items:center;gap:8px;font-size:16px}
+  .pname .dot{width:10px;height:10px}
   .crown{font-size:15px}
   .r-chips{display:flex;flex-wrap:wrap;gap:5px;margin-top:8px}
   .tchip{font-size:11.5px;background:var(--panel2);border:1px solid var(--line);border-radius:20px;padding:2px 9px;color:var(--muted);white-space:nowrap}
@@ -116,6 +112,9 @@
   .tchip.out{opacity:.4;text-decoration:line-through}
   .r-badges{display:flex;flex-wrap:wrap;gap:5px;margin-top:6px}
   .bbadge{font-size:11px;background:rgba(255,203,61,.14);border:1px solid var(--gold);color:var(--gold);border-radius:20px;padding:2px 9px;font-weight:600;white-space:nowrap}
+  .pscore{flex:0 0 auto;text-align:right;min-width:58px}
+  .ptot{font-size:24px;font-weight:800;color:var(--gold);line-height:1}
+  .pbd{font-size:10.5px;color:var(--muted);margin-top:4px;white-space:nowrap}
   .tp{margin-left:auto;color:var(--green);font-weight:700;font-size:12px}
   /* Scoring rules */
   .scoring{display:grid;grid-template-columns:1fr 1fr;gap:14px}
@@ -210,18 +209,7 @@
   <section class="section">
     <h2>The Points Table</h2>
     <p class="hint">Live standings — match points across all four of your teams, plus any tournament bonuses. Refreshed twice a day.</p>
-    <div class="ptable-wrap">
-      <table class="ptable">
-        <thead><tr>
-          <th style="width:42px">#</th>
-          <th>Gambler</th>
-          <th class="t-num">Match</th>
-          <th class="t-num">Bonus</th>
-          <th class="t-num">Total</th>
-        </tr></thead>
-        <tbody id="standingsBody"></tbody>
-      </table>
-    </div>
+    <div class="ptable" id="standingsBody"></div>
   </section>
 
   <!-- SCORING RULES -->
@@ -496,17 +484,18 @@ function render(){
     const lead = (idx===0 && s.total>0) ? 'lead':'';
     const chips = s.teamPts.map(x=>`<span class="tchip ${x.out?'out':''}">${FLAG[x.t]||'🏳️'} ${x.t} <b>${x.pts}</b></span>`).join('');
     const badges = s.bonuses.map(b=>`<span class="bbadge">${b.label} +${b.pts}</span>`).join('');
-    return `<tr class="${lead}" style="--pc:${s.p.color}">
-      <td class="r-rank">${idx+1}</td>
-      <td class="r-name">
-        <div class="r-top"><span class="dot"></span><strong>${s.p.name}</strong>${lead?' <span class="crown">👑</span>':''}</div>
+    return `<div class="prow ${lead}" style="--pc:${s.p.color}">
+      <div class="prank">${idx+1}</div>
+      <div class="pmain">
+        <div class="pname"><span class="dot"></span><strong>${s.p.name}</strong>${lead?' <span class="crown">👑</span>':''}</div>
         <div class="r-chips">${chips}</div>
         ${badges?`<div class="r-badges">${badges}</div>`:''}
-      </td>
-      <td class="r-num">${s.matchPts}</td>
-      <td class="r-num">${s.bonusPts}</td>
-      <td class="r-total">${s.total}</td>
-    </tr>`;
+      </div>
+      <div class="pscore">
+        <div class="ptot">${s.total}</div>
+        <div class="pbd">${s.matchPts} match · ${s.bonusPts} bonus</div>
+      </div>
+    </div>`;
   }).join('');
 
   // Leader / winner banner
