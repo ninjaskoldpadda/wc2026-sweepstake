@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>World Cup 2026 Sweepstake</title>
+<style>
+  :root{
+    --bg:#0a0e1a; --panel:#121829; --panel2:#1a2238; --line:#2a3654;
+    --text:#eef2fb; --muted:#8b97b8; --gold:#ffcb3d; --green:#2ecc71; --red:#ff5470;
+    --accent:#3d8bff;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{
+    background:radial-gradient(1200px 600px at 50% -200px,#15233f,var(--bg));
+    color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    line-height:1.5;padding:0 16px 80px;
+  }
+  .wrap{max-width:1180px;margin:0 auto}
+  header.hero{text-align:center;padding:48px 16px 28px}
+  .kicker{letter-spacing:.32em;font-size:12px;color:var(--gold);text-transform:uppercase;font-weight:700}
+  h1{font-size:clamp(30px,6vw,56px);line-height:1.05;margin:10px 0 6px;font-weight:800}
+  h1 .gr{background:linear-gradient(90deg,#ffcb3d,#ff7a59,#3d8bff);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+  .sub{color:var(--muted);font-size:16px;max-width:640px;margin:0 auto}
+  .pot-hero{margin:24px auto 0;max-width:560px;background:linear-gradient(120deg,#ff5db1,#a25cff,#3d8bff);border-radius:18px;padding:22px 24px;text-align:center;box-shadow:0 16px 44px -14px rgba(140,92,255,.65)}
+  .pot-hero .num{font-size:48px;font-weight:800;color:#fff;line-height:1;text-shadow:0 2px 10px rgba(0,0,0,.2)}
+  .pot-hero .lbl{font-size:13px;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.9);font-weight:700;margin-top:6px}
+  .pot{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-top:14px}
+  .pot .card{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:16px 22px;min-width:130px}
+  .pot .num{font-size:30px;font-weight:800;color:var(--gold)}
+  .pot .lbl{font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:.1em}
+  h2{font-size:24px;margin:14px 0 4px;font-weight:800}
+  .section{margin-top:46px}
+  .section .hint{color:var(--muted);font-size:14px;margin-bottom:18px}
+
+  /* Players */
+  .players{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:14px}
+  .pcard{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:14px 16px;position:relative;overflow:hidden;transition:.2s;cursor:pointer}
+  .pcard:hover{border-color:var(--pc);transform:translateY(-2px)}
+  .pcard-cta{margin-top:11px;font-size:11.5px;font-weight:700;color:var(--pc);opacity:.75;letter-spacing:.02em}
+  .pcard::before{content:"";position:absolute;left:0;top:0;bottom:0;width:5px;background:var(--pc)}
+  .pcard.champ{border-color:var(--gold);box-shadow:0 0 0 2px var(--gold),0 0 30px -4px var(--gold)}
+  .pcard h3{font-size:18px;display:flex;align-items:center;gap:8px;justify-content:space-between}
+  .pcard h3 .alive{font-size:12px;color:var(--muted);font-weight:600;background:var(--panel2);padding:3px 9px;border-radius:20px}
+  .pteams{margin-top:10px;display:flex;flex-direction:column;gap:5px}
+  .pteam{display:flex;align-items:center;gap:8px;font-size:14px;padding:3px 0}
+  .pteam .fl{font-size:18px;width:24px;text-align:center}
+  .pteam.out{opacity:.35;text-decoration:line-through}
+  .dot{width:9px;height:9px;border-radius:50%;background:var(--pc);flex:0 0 auto}
+
+  /* Teams grid */
+  .teams{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:9px}
+  .team{background:var(--panel);border:1px solid var(--line);border-left:4px solid var(--tc);border-radius:11px;
+    padding:9px 11px;display:flex;align-items:center;gap:9px;user-select:none;transition:.15s;font-size:14px}
+  .team .fl{font-size:20px}
+  .team .nm{font-weight:600;line-height:1.1}
+  .team .ow{display:block;font-size:11px;color:var(--muted)}
+  .team.out{opacity:.4}
+  .team.out .nm{text-decoration:line-through}
+  .team.champ{border-color:var(--gold);background:#2a230a;box-shadow:0 0 0 1px var(--gold)}
+
+  .controls{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:16px;align-items:center}
+  .btn{background:var(--panel2);border:1px solid var(--line);color:var(--text);padding:8px 14px;border-radius:10px;cursor:pointer;font-size:13px;font-weight:600}
+  .btn:hover{border-color:var(--accent)}
+  .btn.gold{background:var(--gold);color:#1a1400;border-color:var(--gold)}
+
+  /* Bracket */
+  .bracket-wrap{overflow-x:auto;padding-bottom:10px}
+  .bracket{display:flex;gap:18px;min-width:760px}
+  .round{flex:1;min-width:140px}
+  .round h4{font-size:12px;text-transform:uppercase;letter-spacing:.12em;color:var(--gold);text-align:center;margin-bottom:12px;padding-bottom:8px;border-bottom:1px solid var(--line)}
+  .slot{background:var(--panel);border:1px dashed var(--line);border-radius:9px;min-height:38px;margin-bottom:10px;display:flex;align-items:center;padding:6px 10px;font-size:13px;color:var(--muted);gap:7px}
+  .slot.final{border-style:solid;border-color:var(--gold)}
+  .slot.done{border-style:solid;background:var(--panel2);color:var(--text);font-weight:600}
+  .slot.done.final{background:#2a230a;border-color:var(--gold)}
+  .slot .fl{font-size:16px}
+  .slot .bt{font-size:12.5px}
+
+  /* Odds modal */
+  .modal{position:fixed;inset:0;background:rgba(4,7,15,.78);backdrop-filter:blur(4px);display:none;align-items:center;justify-content:center;padding:20px;z-index:50}
+  .modal.show{display:flex;animation:pop .25s}
+  .modal-card{position:relative;background:var(--panel);border:1px solid var(--line);border-top:5px solid var(--mc);border-radius:20px;max-width:480px;width:100%;padding:26px 26px 22px;box-shadow:0 30px 80px -20px #000}
+  .modal-x{position:absolute;top:14px;right:16px;background:none;border:none;color:var(--muted);font-size:26px;line-height:1;cursor:pointer}
+  .modal-x:hover{color:var(--text)}
+  .modal-head{display:flex;align-items:center;gap:10px}
+  .modal-dot{width:14px;height:14px;border-radius:50%;background:var(--mc)}
+  .modal-head h3{font-size:24px;font-weight:800}
+  .verdict{display:inline-block;margin-top:12px;font-size:13px;font-weight:800;letter-spacing:.04em;padding:5px 12px;border-radius:30px;background:var(--mc);color:#0a0e1a}
+  .meme{margin-top:16px;border-radius:14px;overflow:hidden;border:1px solid var(--line);line-height:0}
+  .meme svg{display:block}
+  .odds-row{display:flex;justify-content:space-between;align-items:baseline;margin-top:18px}
+  .odds-lbl{font-size:12px;text-transform:uppercase;letter-spacing:.1em;color:var(--muted)}
+  .odds-val{font-size:18px;font-weight:800;color:var(--mc)}
+  .odds-bar{height:9px;background:var(--panel2);border-radius:10px;margin-top:8px;overflow:hidden}
+  .odds-fill{height:100%;border-radius:10px;background:var(--mc);transition:width .5s}
+  .modal-body{margin-top:16px;font-size:14.5px;line-height:1.6;color:var(--text)}
+  .modal-teams{display:flex;flex-wrap:wrap;gap:7px;margin-top:16px}
+  .modal-teams span{font-size:12.5px;background:var(--panel2);border:1px solid var(--line);border-radius:20px;padding:4px 10px}
+  /* Points table — card rows, reflow on mobile (no horizontal scroll) */
+  .ptable{display:flex;flex-direction:column;gap:9px}
+  .prow{display:flex;align-items:center;gap:12px;background:var(--panel);border:1px solid var(--line);border-left:5px solid var(--pc);border-radius:12px;padding:12px 14px}
+  .prow.lead{background:#1c1d12;border-color:var(--gold)}
+  .prank{font-size:18px;font-weight:800;color:var(--muted);width:22px;text-align:center;flex:0 0 auto}
+  .prow.lead .prank{color:var(--gold)}
+  .pmain{flex:1;min-width:0}
+  .pname{display:flex;align-items:center;gap:8px;font-size:16px}
+  .pname .dot{width:10px;height:10px}
+  .crown{font-size:15px}
+  .r-chips{display:flex;flex-wrap:wrap;gap:5px;margin-top:8px}
+  .tchip{font-size:11.5px;background:var(--panel2);border:1px solid var(--line);border-radius:20px;padding:2px 9px;color:var(--muted);white-space:nowrap}
+  .tchip b{color:var(--green)}
+  .tchip.out{opacity:.4;text-decoration:line-through}
+  .r-badges{display:flex;flex-wrap:wrap;gap:5px;margin-top:6px}
+  .bbadge{font-size:11px;background:rgba(255,203,61,.14);border:1px solid var(--gold);color:var(--gold);border-radius:20px;padding:2px 9px;font-weight:600;white-space:nowrap}
+  .pscore{flex:0 0 auto;text-align:right;min-width:58px}
+  .ptot{font-size:24px;font-weight:800;color:var(--gold);line-height:1}
+  .pbd{font-size:10.5px;color:var(--muted);margin-top:4px;white-space:nowrap}
+  .tp{margin-left:auto;color:var(--green);font-weight:700;font-size:12px}
+  /* Scoring rules */
+  .scoring{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+  .scoring .sc{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:16px 18px}
+  .scoring .sc h4{font-size:13px;text-transform:uppercase;letter-spacing:.08em;color:var(--gold);margin-bottom:12px}
+  .scoring .sc h4 .sub2{color:var(--muted);font-weight:600;letter-spacing:0;text-transform:none}
+  .scoring .sc ul{list-style:none;display:flex;flex-direction:column;gap:9px}
+  .scoring .sc li{display:flex;justify-content:space-between;gap:12px;font-size:14px;align-items:baseline;border-bottom:1px dashed var(--line);padding-bottom:9px}
+  .scoring .sc li:last-child{border-bottom:none;padding-bottom:0}
+  .scoring .sc li .pts{font-weight:800;color:var(--green);white-space:nowrap}
+  @media(max-width:680px){.scoring{grid-template-columns:1fr}}
+  .sync{display:flex;align-items:center;justify-content:center;gap:10px;margin:6px auto 0;max-width:560px;
+    background:var(--panel);border:1px solid var(--line);border-radius:30px;padding:8px 16px;font-size:13px;color:var(--muted)}
+  .sync .live{display:inline-flex;align-items:center;gap:6px;font-weight:800;color:var(--green);font-size:11px;letter-spacing:.1em}
+  .sync .pulse{width:8px;height:8px;border-radius:50%;background:var(--green);animation:blink 1.6s infinite}
+  @keyframes blink{0%,100%{opacity:1}50%{opacity:.25}}
+  .countdown{max-width:560px;margin:16px auto 0;text-align:center;background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:16px 18px}
+  .cd-label{font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);font-weight:800}
+  .cd-match{font-size:19px;font-weight:800;margin:5px 0 2px}
+  .cd-owners{font-size:13px;font-weight:700;margin:2px 0 1px;color:var(--accent)}
+  .cd-owners .pill{display:inline-flex;align-items:center;gap:5px}
+  .cd-owners .pdot{width:8px;height:8px;border-radius:50%;display:inline-block}
+  .cd-owners .vs{color:var(--muted);font-weight:600;margin:0 7px}
+  .cd-note{font-size:12px;color:var(--muted);margin-bottom:12px}
+  .cd-clock{display:flex;justify-content:center;gap:10px}
+  .cd-clock .unit{background:var(--panel2);border:1px solid var(--line);border-radius:11px;padding:8px 4px;min-width:62px}
+  .cd-clock .unit span{display:block;font-size:26px;font-weight:800;line-height:1;font-variant-numeric:tabular-nums}
+  .cd-clock .unit small{font-size:10px;color:var(--muted);text-transform:uppercase;letter-spacing:.08em}
+  .cd-live{color:var(--green);font-weight:800;font-size:20px;padding:10px 0}
+  .winner-banner{display:none;text-align:center;background:linear-gradient(90deg,#3a2c00,#5c4500);border:1px solid var(--gold);border-radius:16px;padding:22px;margin-bottom:20px}
+  .winner-banner.show{display:block;animation:pop .4s}
+  @keyframes pop{from{transform:scale(.95);opacity:0}to{transform:scale(1);opacity:1}}
+  .winner-banner .t{font-size:14px;letter-spacing:.2em;text-transform:uppercase;color:var(--gold)}
+  .winner-banner .w{font-size:34px;font-weight:800;margin:6px 0}
+  /* How it works */
+  .flow{display:flex;align-items:stretch;gap:8px;flex-wrap:wrap}
+  .flow .step{flex:1;min-width:150px;background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:14px}
+  .flow .big{font-size:34px;font-weight:800;color:var(--gold);line-height:1}
+  .flow .sl{font-weight:700;margin:4px 0 6px;font-size:14px}
+  .flow .sd{font-size:12.5px;color:var(--muted)}
+  .flow .arrow{display:flex;align-items:center;color:var(--line);font-size:22px;font-weight:700}
+  .facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px;margin-top:16px}
+  .facts .fact{background:var(--panel2);border:1px solid var(--line);border-radius:12px;padding:13px 15px;font-size:13.5px;color:var(--muted)}
+  .facts .fact strong{color:var(--text)}
+  @media(max-width:680px){.flow .arrow{display:none}}
+  footer{text-align:center;color:var(--muted);font-size:12px;margin-top:60px}
+  .legend{font-size:13px;color:var(--muted);margin-top:8px}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="hero">
+    <div class="kicker">FIFA World Cup 2026 · USA · Canada · Mexico</div>
+    <h1>The <span class="gr">Sweepstake</span></h1>
+    <p class="sub">12 players, €20 each, 48 teams drawn at random. Points stack up across all four of your teams, all tournament long — most points when the dust settles takes the €240.</p>
+    <div class="pot-hero">
+      <div class="num">€240</div><div class="lbl">The Pot</div>
+    </div>
+    <div class="pot">
+      <div class="card"><div class="num">12</div><div class="lbl">Degenerate Gamblers</div></div>
+      <div class="card"><div class="num">48</div><div class="lbl">Teams</div></div>
+      <div class="card"><div class="num">€20</div><div class="lbl">Squandered</div></div>
+    </div>
+  </header>
+
+  <div class="sync" id="syncBar">
+    <span class="live"><span class="pulse"></span>AUTO</span>
+    <span id="syncText"></span>
+  </div>
+
+  <div class="countdown" id="countdown">
+    <div class="cd-label">⏱ Next match</div>
+    <div class="cd-match" id="cdMatch"></div>
+    <div class="cd-owners" id="cdOwners"></div>
+    <div class="cd-note" id="cdNote"></div>
+    <div class="cd-clock" id="cdClock">
+      <div class="unit"><span id="cdD">00</span><small>days</small></div>
+      <div class="unit"><span id="cdH">00</span><small>hrs</small></div>
+      <div class="unit"><span id="cdM">00</span><small>min</small></div>
+      <div class="unit"><span id="cdS">00</span><small>sec</small></div>
+    </div>
+  </div>
+
+  <div class="winner-banner" id="winnerBanner">
+    <div class="t" id="bannerT">📊 Current Leader</div>
+    <div class="w" id="winnerName"></div>
+    <div id="bannerSub">out in front for the <strong>€240</strong> pot</div>
+  </div>
+
+  <!-- POINTS TABLE -->
+  <section class="section">
+    <h2>The Points Table</h2>
+    <p class="hint">Live standings — match points across all four of your teams, plus any tournament bonuses. Refreshed twice a day.</p>
+    <div class="ptable" id="standingsBody"></div>
+  </section>
+
+  <!-- SCORING RULES -->
+  <section class="section">
+    <h2>How Scoring Works</h2>
+    <p class="hint">New rules for 2026 — it's not winner-takes-all any more. Every match your teams play earns points, and there are bonuses up for grabs at the end.</p>
+    <div class="scoring">
+      <div class="sc">
+        <h4>During the Tournament <span class="sub2">· per team, every match</span></h4>
+        <ul>
+          <li><span>Your team wins a match</span><span class="pts">+3</span></li>
+          <li><span>Your team draws a match</span><span class="pts">+1</span></li>
+        </ul>
+      </div>
+      <div class="sc">
+        <h4>Overall Results <span class="sub2">· one-off bonuses</span></h4>
+        <ul>
+          <li><span>🏆 Your team wins the World Cup</span><span class="pts">+10</span></li>
+          <li><span>🥈 Runner-up</span><span class="pts">+5</span></li>
+          <li><span>🥉 Third place</span><span class="pts">+3</span></li>
+          <li><span>👟 Golden Boot — top scorer is on your team</span><span class="pts">+5</span></li>
+          <li><span>⭐ Player of the Tournament on your team</span><span class="pts">+5</span></li>
+          <li><span>🧤 Best Goalkeeper</span><span class="pts">+5</span></li>
+          <li><span>🟨 Team with the most yellow cards</span><span class="pts">+5</span></li>
+          <li><span>🥅 Team with the most goals conceded</span><span class="pts">+5</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- THE DRAW -->
+  <section class="section">
+    <h2>The Draw</h2>
+    <p class="hint">Each player drew 4 teams at random. Tap any card for their odds. Points earned per team show as the tournament plays out; knocked-out teams grey out.</p>
+    <div class="players" id="players"></div>
+  </section>
+
+  <!-- ALL 48 TEAMS -->
+  <section class="section">
+    <h2>All 48 Teams</h2>
+    <p class="hint">Colour-coded by owner, with match points shown per team. Knocked-out teams grey out automatically from live results.</p>
+    <div class="controls">
+      <span class="legend" id="aliveCount"></span>
+    </div>
+    <div class="teams" id="teams"></div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section class="section">
+    <h2>How the 2026 World Cup Works</h2>
+    <p class="hint">First-ever 48-team World Cup, hosted across the USA, Canada and Mexico — 104 matches in total. Here's the path from 48 teams down to one champion.</p>
+    <div class="flow">
+      <div class="step"><div class="big">48</div><div class="sl">Teams</div><div class="sd">12 groups (A–L) of 4. Every team plays 3 group games.</div></div>
+      <div class="arrow">→</div>
+      <div class="step"><div class="big">32</div><div class="sl">Round of 32</div><div class="sd">Top 2 from each group (24) + the 8 best 3rd-placed teams advance.</div></div>
+      <div class="arrow">→</div>
+      <div class="step"><div class="big">16</div><div class="sl">Round of 16</div><div class="sd">Straight knockout — lose and you're out.</div></div>
+      <div class="arrow">→</div>
+      <div class="step"><div class="big">8</div><div class="sl">Quarter-Finals</div><div class="sd">The last eight.</div></div>
+      <div class="arrow">→</div>
+      <div class="step"><div class="big">4</div><div class="sl">Semi-Finals</div><div class="sd">One win from the final.</div></div>
+      <div class="arrow">→</div>
+      <div class="step"><div class="big">2</div><div class="sl">Final</div><div class="sd">Winner lifts the trophy — and their owner takes the €240.</div></div>
+    </div>
+    <div class="facts">
+      <div class="fact"><strong>66.7%</strong> of teams reach the knockouts (was 50% in 2022) — third place can now be enough to survive.</div>
+      <div class="fact"><strong>8 matches</strong> for the eventual winner — one more than the old format, because of the extra Round of 32.</div>
+      <div class="fact"><strong>Tiebreakers</strong> for the group stage: points, goal difference, goals scored, then head-to-head, fair-play points and FIFA ranking.</div>
+      <div class="fact"><strong>For the pot:</strong> forget winner-takes-all — every match your teams play earns points all tournament long. A knocked-out team simply stops adding to your tally, so nobody is truly out of it until the maths says so.</div>
+    </div>
+    <p class="legend" style="margin-top:14px">Format source: <a href="https://www.ucfb.ac.uk/news/the-48-team-world-cup-how-the-new-group-stage-works/" target="_blank" style="color:var(--accent)">UCFB — How the New Group Stage Works</a></p>
+  </section>
+
+  <!-- BRACKET -->
+  <section class="section">
+    <h2>The Knockout Bracket</h2>
+    <p class="hint">From the Round of 32 down to the champion. Fills in automatically as teams advance — refreshed twice a day.</p>
+    <div class="bracket-wrap">
+      <div class="bracket" id="bracket"></div>
+    </div>
+  </section>
+
+  <footer>Built for Flynn's WC2026 sweepstake · €240 pot · last team standing takes all · tap a player for their odds</footer>
+</div>
+
+<div class="modal" id="modal" aria-hidden="true">
+  <div class="modal-card" style="--mc:#888">
+    <button class="modal-x" id="modalX">×</button>
+    <div class="modal-head">
+      <span class="modal-dot"></span>
+      <h3 id="mName"></h3>
+    </div>
+    <div class="verdict" id="mVerdict"></div>
+    <div class="meme" id="mMeme"></div>
+    <div class="odds-row"><span class="odds-lbl">Odds of taking the €240</span><span class="odds-val" id="mOdds"></span></div>
+    <div class="odds-bar"><div class="odds-fill" id="mFill"></div></div>
+    <p class="modal-body" id="mBody"></p>
+    <div class="modal-teams" id="mTeams"></div>
+  </div>
+</div>
+
+<script>
+const PLAYERS = [
+  {name:"Martin",   color:"#e6194b", teams:["Belgium","Austria","Egypt","Colombia"]},
+  {name:"Orla",     color:"#f58231", teams:["Germany","Tunisia","France","Ecuador"]},
+  {name:"QuinnA",   color:"#ffe119", teams:["Uruguay","Morocco","Sweden","Ghana"]},
+  {name:"Ciarán",   color:"#bfef45", teams:["Netherlands","South Korea","Haiti","Iraq"]},
+  {name:"Stephen",  color:"#3cb44b", teams:["Senegal","Australia","Portugal","Paraguay"]},
+  {name:"QuinnB",   color:"#42d4f4", teams:["Saudi Arabia","Canada","Turkey","Czechia"]},
+  {name:"Jan",      color:"#4363d8", teams:["Qatar","England","DR Congo","Argentina"]},
+  {name:"Kristina", color:"#911eb4", teams:["Brazil","Croatia","USA","Mexico"]},
+  {name:"Lucy",     color:"#f032e6", teams:["Spain","Algeria","Bosnia & Herzegovina","Norway"]},
+  {name:"Flynn",    color:"#ff8fa3", teams:["South Africa","Iran","Switzerland","Cape Verde"]},
+  {name:"Sinead",   color:"#00d2a8", teams:["Japan","Panama","Curaçao","Uzbekistan"]},
+  {name:"David",    color:"#a0825a", teams:["Jordan","Ivory Coast","Scotland","New Zealand"]},
+];
+
+const FLAG = {
+  "Belgium":"🇧🇪","Austria":"🇦🇹","Egypt":"🇪🇬","Colombia":"🇨🇴",
+  "Germany":"🇩🇪","Tunisia":"🇹🇳","France":"🇫🇷","Ecuador":"🇪🇨",
+  "Uruguay":"🇺🇾","Morocco":"🇲🇦","Sweden":"🇸🇪","Ghana":"🇬🇭",
+  "Netherlands":"🇳🇱","South Korea":"🇰🇷","Haiti":"🇭🇹","Iraq":"🇮🇶",
+  "Senegal":"🇸🇳","Australia":"🇦🇺","Portugal":"🇵🇹","Paraguay":"🇵🇾",
+  "Saudi Arabia":"🇸🇦","Canada":"🇨🇦","Turkey":"🇹🇷","Czechia":"🇨🇿",
+  "Qatar":"🇶🇦","England":"🏴󠁧󠁢󠁥󠁮󠁧󠁿","DR Congo":"🇨🇩","Argentina":"🇦🇷",
+  "Brazil":"🇧🇷","Croatia":"🇭🇷","USA":"🇺🇸","Mexico":"🇲🇽",
+  "Spain":"🇪🇸","Algeria":"🇩🇿","Bosnia & Herzegovina":"🇧🇦","Norway":"🇳🇴",
+  "South Africa":"🇿🇦","Iran":"🇮🇷","Switzerland":"🇨🇭","Cape Verde":"🇨🇻",
+  "Japan":"🇯🇵","Panama":"🇵🇦","Curaçao":"🇨🇼","Uzbekistan":"🇺🇿",
+  "Jordan":"🇯🇴","Ivory Coast":"🇨🇮","Scotland":"🏴󠁧󠁢󠁳󠁣󠁴󠁿","New Zealand":"🇳🇿",
+};
+
+/* ============================================================
+   LIVE STATE — auto-updated twice daily from real match results.
+   The scheduled task rewrites ONLY the three values below.
+   ============================================================ */
+const DATA_URL = "https://raw.githubusercontent.com/ninjaskoldpadda/wc2026-sweepstake/data/data.json";
+let LAST_SYNC = "Not started yet — kicks off Thu 11 June";
+let STAGE = "Pre-tournament";
+let ELIMINATED = [];
+let NEXT_MATCH = { label:"Mexico 🇲🇽 vs 🇿🇦 South Africa", note:"Opening match · Estadio Azteca", kickoff:"2026-06-11T19:00:00Z" };
+let BRACKET = { "Round of 32":[], "Round of 16":[], "Quarter-Finals":[], "Semi-Finals":[], "Final":[], "Champion":[] };
+let RESULTS = {};
+let AWARDS = { champion:null, runnerUp:null, third:null, goldenBoot:null, playerOfTournament:null, bestGoalkeeper:null, mostYellowCards:null, mostGoalsConceded:null };
+/* ============================================================ */
+
+// Light-hearted winning odds per player (pct just drives the bar)
+const LIKELIHOOD = {
+  "Martin":{verdict:"Dark-horse danger",odds:"Decent",pct:60,body:"Belgium are your headline act — forever the 'best team never to win it', but if the golden oldies finally show up you're laughing. Colombia can hurt anyone on their day, Egypt have Salah-shaped hope, and Austria are nobody's idea of an easy night. No guarantees, but a proper puncher's chance."},
+  "Orla":{verdict:"Box-seat favourite",odds:"High",pct:85,body:"Two former champions in one hand — France and Germany have lifted the trophy six times between them. Tunisia and Ecuador are basically there to make up the numbers, but who's counting when you're holding that much firepower? If you don't go deep with this lot, there'll be a review."},
+  "QuinnA":{verdict:"Sneaky good",odds:"Above average",pct:62,body:"Morocco stunned the planet by reaching the semis in 2022, Uruguay always punch above their weight, Ghana bring the flair and Sweden the grit. Not a single household-name favourite, but a genuine dark-horse hand nobody will see coming. Spoiler-merchants, the lot of them."},
+  "Ciarán":{verdict:"All eggs, one basket",odds:"Mid",pct:50,body:"Your entire campaign rides on the Netherlands — three-time finalists and absolute masters of losing the big one, but always a threat. Behind them it thins out fast: South Korea will run all day, while Haiti and Iraq are here for the vibes and an early flight home. Total Oranje or total heartbreak."},
+  "Stephen":{verdict:"Quietly strong",odds:"Good",pct:70,body:"Portugal are the real deal and could go all the way. Senegal are African royalty and horrible to play against, Australia will dig trenches, and Paraguay will foul anything that moves. Not the flashiest hand on the board, but a genuinely dangerous one."},
+  "QuinnB":{verdict:"Hoping for chaos",odds:"Slim",pct:22,body:"Turkey had their semi-final moment... back in 2002. Czechia are tidy, Canada are improving, and Saudi Arabia did once beat Argentina if you squint. You're not winning this on talent — you're winning it on a glorious, unexplainable, everyone-above-you-melts-down kind of tournament."},
+  "Jan":{verdict:"Pot favourite",odds:"Very high",pct:90,body:"You drew the reigning world champions — Argentina, Messi and all — AND England, who are always 'this is the year'. Qatar and DR Congo are the polite filler. Honestly the other eleven might as well start reading the small print on splitting the pot now."},
+  "Kristina":{verdict:"The dream draw",odds:"Very high",pct:92,body:"Brazil — five stars, more than anyone — plus Croatia, who reached a final and a semi in the last two tournaments, plus BOTH hosts in USA and Mexico riding the home wave. This might just be the best hand on the table. Start drafting the acceptance speech."},
+  "Lucy":{verdict:"Serious contender",odds:"High",pct:80,body:"Spain are reigning European champions and pass teams into oblivion — that alone makes you dangerous. Algeria, Bosnia and Norway are unlikely to trouble the engraver, but with Spain in this form you barely need them. One elite team, very well drawn."},
+  "Flynn":{verdict:"Thanks for the €20",odds:"Long shot",pct:20,body:"Switzerland are your one grown-up — sensible, organised, and about as thrilling as a tax return. They'll grind into a knockout round and then bow out on penalties, because of course they will. Behind them it's grim: South Africa get the opening-night buzz and not a lot else, Iran are tidy and toothless, and Cape Verde are a lovely little story whose story ends in the group stage. This is a hand that quietly waves goodbye in the first fortnight."},
+  "Sinead":{verdict:"Thoughts & prayers",odds:"Basically nil",pct:8,body:"Right. Deep breath. Japan are genuinely good and will carry your entire hope on their backs. After that... Panama, then Curaçao — an island of about 150,000 people — and Uzbekistan, at their first ever World Cup. You didn't draw teams, you drew a geography quiz. Frame it. It's a collector's item. €20 beautifully donated."},
+  "David":{verdict:"Bless your heart",odds:"Very slim",pct:18,body:"Ivory Coast are reigning African champions and your one legit lifeline. Then there's Scotland, who have never once escaped a World Cup group in recorded history, Jordan on debut, and New Zealand — whose proudest WC stat is 'unbeaten and still went home'. The Tartan Army will sing gloriously on the flight back."}
+};
+
+// Meme card per player — scene emoji + impact-font top/bottom caption (rendered as inline SVG)
+const MEME = {
+  "Martin":  {scene:"🐺⚽🔥", top:"Belgium finally doing it?", bottom:"Puncher's chance"},
+  "Orla":    {scene:"🇫🇷🏆🇩🇪", top:"Two former champions", bottom:"Absolutely loaded"},
+  "QuinnA":  {scene:"🐴💨🤫", top:"Nobody's watching us", bottom:"Sneaky dark horse"},
+  "Ciarán":  {scene:"🎲🇳🇱⏳", top:"All on the Dutch", bottom:"Boom or bust"},
+  "Stephen": {scene:"💪🇵🇹⚽", top:"Portugal are live", bottom:"Quietly dangerous"},
+  "QuinnB":  {scene:"🤡🎪🙏", top:"Turkey's last good run: 2002", bottom:"Need a meltdown"},
+  "Jan":     {scene:"🐐🏆💸", top:"Argentina + England", bottom:"Split the pot now"},
+  "Kristina":{scene:"🇧🇷⭐🏆", top:"Five stars + both hosts", bottom:"Write the speech"},
+  "Lucy":    {scene:"🇪🇸🎯🔥", top:"Euro champions Spain", bottom:"Serious threat"},
+  "Flynn":   {scene:"🇨🇭🐌🎲", top:"Switzerland. Thrilling.", bottom:"Out by matchday 3"},
+  "Sinead":  {scene:"🤡🗑️🔥", top:"Panama · Curaçao · Uzbekistan", bottom:"€20 well donated"},
+  "David":   {scene:"🏴󠁧󠁢󠁳󠁣󠁴󠁿😭⚽", top:"Scotland never escape the group", bottom:"Bless your heart"}
+};
+function memeColors(pct){
+  if(pct>=80) return ["#11998e","#0f7a3d"];
+  if(pct>=60) return ["#2980b9","#1f2d4a"];
+  if(pct>=40) return ["#f7971e","#b85c00"];
+  return ["#cb2d3e","#2c1620"];
+}
+function buildMeme(name,pct){
+  const m = MEME[name]; if(!m) return '';
+  const [c1,c2] = memeColors(pct);
+  const cap = (t,y)=>`<text x="200" y="${y}" text-anchor="middle" textLength="372" lengthAdjust="spacingAndGlyphs" font-family="Impact,'Arial Black',sans-serif" font-size="26" fill="#fff" stroke="#000" stroke-width="3" paint-order="stroke" style="text-transform:uppercase;letter-spacing:.5px">${t}</text>`;
+  return `<svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg" width="100%">`+
+    `<defs><linearGradient id="g${pct}" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="${c1}"/><stop offset="1" stop-color="${c2}"/></linearGradient></defs>`+
+    `<rect width="400" height="200" fill="url(#g${pct})"/>`+
+    `<text x="200" y="130" text-anchor="middle" font-size="74">${m.scene}</text>`+
+    cap(m.top,40)+cap(m.bottom,188)+`</svg>`;
+}
+
+// team -> owner index
+const owner = {};
+PLAYERS.forEach((p,i)=>p.teams.forEach(t=>owner[t]=i));
+const ALL_TEAMS = PLAYERS.flatMap(p=>p.teams);
+let eliminated = new Set(ELIMINATED);
+
+// ---- Scoring engine ----
+const BONUSES = [
+  {key:'champion',          pts:10, label:'🏆 Winners'},
+  {key:'runnerUp',          pts:5,  label:'🥈 Runner-up'},
+  {key:'third',             pts:3,  label:'🥉 Third'},
+  {key:'goldenBoot',        pts:5,  label:'👟 Golden Boot'},
+  {key:'playerOfTournament',pts:5,  label:'⭐ Player of the Tournament'},
+  {key:'bestGoalkeeper',    pts:5,  label:'🧤 Best Goalkeeper'},
+  {key:'mostYellowCards',   pts:5,  label:'🟨 Most Yellow Cards'},
+  {key:'mostGoalsConceded', pts:5,  label:'🥅 Most Goals Conceded'},
+];
+function matchPtsTeam(t){ const r=RESULTS[t]; return r ? (r.w||0)*3 + (r.d||0)*1 : 0; }
+function computeStandings(){
+  return PLAYERS.map((p,i)=>{
+    const teamPts = p.teams.map(t=>({t,pts:matchPtsTeam(t),out:eliminated.has(t)}));
+    const matchPts = teamPts.reduce((s,x)=>s+x.pts,0);
+    const bonuses = BONUSES.filter(b=>AWARDS[b.key] && owner[AWARDS[b.key]]===i).map(b=>({...b,team:AWARDS[b.key]}));
+    const bonusPts = bonuses.reduce((s,b)=>s+b.pts,0);
+    return {p,i,teamPts,matchPts,bonuses,bonusPts,total:matchPts+bonusPts};
+  }).sort((a,b)=> b.total-a.total || b.matchPts-a.matchPts || a.p.name.localeCompare(b.p.name));
+}
+
+function render(){
+  const standings = computeStandings();
+  const totalByIdx = {}; standings.forEach(s=>totalByIdx[s.i]=s.total);
+
+  // Player cards
+  const pc = document.getElementById('players');
+  pc.innerHTML = PLAYERS.map((p,i)=>{
+    const teams = p.teams.map(t=>{
+      const tp = matchPtsTeam(t);
+      return `<div class="pteam ${eliminated.has(t)?'out':''}"><span class="fl">${FLAG[t]||'🏳️'}</span>${t}<span class="tp">${tp?('+'+tp):''}</span></div>`;
+    }).join('');
+    return `<div class="pcard" style="--pc:${p.color}" data-pi="${i}">
+      <h3><span style="display:flex;align-items:center;gap:8px"><span class="dot"></span>${p.name}</span>
+      <span class="alive">${totalByIdx[i]} pts</span></h3>
+      <div class="pteams">${teams}</div>
+      <div class="pcard-cta">Tap for winning odds →</div></div>`;
+  }).join('');
+  pc.querySelectorAll('.pcard').forEach(el=>el.onclick=()=>openModal(+el.dataset.pi));
+
+  // Teams grid
+  const tg = document.getElementById('teams');
+  tg.innerHTML = ALL_TEAMS.map(t=>{
+    const p = PLAYERS[owner[t]];
+    const tp = matchPtsTeam(t);
+    return `<div class="team ${eliminated.has(t)?'out':''}" style="--tc:${p.color}" data-team="${t}">
+      <span class="fl">${FLAG[t]||'🏳️'}</span>
+      <span><span class="nm">${t}</span><span class="ow">${p.name}${tp?(' · '+tp+' pts'):''}</span></span></div>`;
+  }).join('');
+  document.getElementById('aliveCount').textContent = `${totalAlive()} of 48 teams still in · ${eliminated.size} out`;
+
+  // Points table
+  const tb = document.getElementById('standingsBody');
+  tb.innerHTML = standings.map((s,idx)=>{
+    const lead = (idx===0 && s.total>0) ? 'lead':'';
+    const chips = s.teamPts.map(x=>`<span class="tchip ${x.out?'out':''}">${FLAG[x.t]||'🏳️'} ${x.t} <b>${x.pts}</b></span>`).join('');
+    const badges = s.bonuses.map(b=>`<span class="bbadge">${b.label} +${b.pts}</span>`).join('');
+    return `<div class="prow ${lead}" style="--pc:${s.p.color}">
+      <div class="prank">${idx+1}</div>
+      <div class="pmain">
+        <div class="pname"><span class="dot"></span><strong>${s.p.name}</strong>${lead?' <span class="crown">👑</span>':''}</div>
+        <div class="r-chips">${chips}</div>
+        ${badges?`<div class="r-badges">${badges}</div>`:''}
+      </div>
+      <div class="pscore">
+        <div class="ptot">${s.total}</div>
+        <div class="pbd">${s.matchPts} match · ${s.bonusPts} bonus</div>
+      </div>
+    </div>`;
+  }).join('');
+
+  // Leader / winner banner
+  const banner = document.getElementById('winnerBanner');
+  const finished = /crown|champion/i.test(STAGE);
+  const top = standings[0];
+  if(top && top.total>0){
+    document.getElementById('bannerT').textContent = finished ? '🏆 Winner' : '📊 Current Leader';
+    document.getElementById('winnerName').innerHTML = `${top.p.name} — ${top.total} pts`;
+    document.getElementById('bannerSub').innerHTML = finished ? 'takes the <strong>€240</strong> pot' : 'out in front for the <strong>€240</strong> pot';
+    banner.classList.add('show');
+  } else banner.classList.remove('show');
+}
+
+// Odds modal
+function openModal(i){
+  const p = PLAYERS[i], L = LIKELIHOOD[p.name] || {verdict:"—",odds:"—",pct:0,body:""};
+  const card = document.querySelector('.modal-card');
+  card.style.setProperty('--mc', p.color);
+  document.getElementById('mName').textContent = p.name;
+  document.querySelector('.modal-dot').style.background = p.color;
+  document.getElementById('mVerdict').textContent = L.verdict;
+  document.getElementById('mMeme').innerHTML = buildMeme(p.name, L.pct);
+  document.getElementById('mOdds').textContent = L.odds;
+  document.getElementById('mBody').textContent = L.body;
+  document.getElementById('mTeams').innerHTML = p.teams.map(t=>`<span>${FLAG[t]||'🏳️'} ${t}${eliminated.has(t)?' ❌':''}</span>`).join('');
+  document.getElementById('mFill').style.width = '0%';
+  document.getElementById('modal').classList.add('show');
+  setTimeout(()=>{document.getElementById('mFill').style.width = L.pct+'%';},50);
+}
+function closeModal(){ document.getElementById('modal').classList.remove('show'); }
+document.getElementById('modalX').onclick = closeModal;
+document.getElementById('modal').onclick = e=>{ if(e.target.id==='modal') closeModal(); };
+document.addEventListener('keydown', e=>{ if(e.key==='Escape') closeModal(); });
+
+function totalAlive(){ return ALL_TEAMS.length - eliminated.size; }
+function toggle(t){
+  if(eliminated.has(t)) eliminated.delete(t); else eliminated.add(t);
+  render();
+}
+// Countdown to next game
+function pad(n){return String(n).padStart(2,'0');}
+function tickCountdown(){
+  const el = document.getElementById('countdown');
+  if(!NEXT_MATCH || !NEXT_MATCH.kickoff){ el.style.display='none'; return; }
+  document.getElementById('cdMatch').textContent = NEXT_MATCH.label;
+  document.getElementById('cdNote').textContent = NEXT_MATCH.note || '';
+  // Owner matchup — find which of the 48 teams appear in the fixture label, in order
+  const inMatch = ALL_TEAMS
+    .map(t=>({t,idx:NEXT_MATCH.label.indexOf(t)}))
+    .filter(x=>x.idx>=0)
+    .sort((a,b)=>a.idx-b.idx);
+  const ownEl = document.getElementById('cdOwners');
+  if(inMatch.length>=2){
+    const pill = x=>{const p=PLAYERS[owner[x.t]];return `<span class="pill"><span class="pdot" style="background:${p.color}"></span>${p.name}</span>`;};
+    ownEl.innerHTML = pill(inMatch[0]) + '<span class="vs">vs</span>' + pill(inMatch[1]);
+  } else ownEl.innerHTML='';
+  const diff = new Date(NEXT_MATCH.kickoff).getTime() - Date.now();
+  const clock = document.getElementById('cdClock');
+  if(diff <= 0 && diff > -3*3600*1000){ clock.innerHTML = '<div class="cd-live">🔴 KICK OFF — match in progress</div>'; return; }
+  if(diff <= 0){ clock.innerHTML = '<div class="cd-live">Waiting for next fixture…</div>'; return; }
+  const d=Math.floor(diff/86400000), h=Math.floor(diff/3600000)%24, m=Math.floor(diff/60000)%60, s=Math.floor(diff/1000)%60;
+  document.getElementById('cdD').textContent=pad(d);
+  document.getElementById('cdH').textContent=pad(h);
+  document.getElementById('cdM').textContent=pad(m);
+  document.getElementById('cdS').textContent=pad(s);
+}
+setInterval(tickCountdown,1000);
+
+// Bracket — data-driven, auto-filled by the sync (no typing)
+const ROUNDS = [["Round of 32",16],["Round of 16",8],["Quarter-Finals",4],["Semi-Finals",2],["Final",1],["Champion",1]];
+function buildBracket(){ document.getElementById('bracket').innerHTML = ROUNDS.map(([name,n])=>{
+  const filled = (BRACKET[name]||[]);
+  const slots = Array.from({length:n}).map((_,i)=>{
+    const t = filled[i];
+    if(t){
+      const p = PLAYERS[owner[t]];
+      const champ = name==='Champion';
+      return `<div class="slot done ${champ?'final':''}" ${p?`style="border-left:4px solid ${p.color}"`:''}>
+        <span class="fl">${FLAG[t]||'🏳️'}</span><span class="bt">${champ?'🏆 ':''}${t}</span></div>`;
+    }
+    return `<div class="slot ${name==='Champion'?'final':''}">${name==='Champion'?'🏆':''}</div>`;
+  }).join('');
+  return `<div class="round"><h4>${name}</h4>${slots}</div>`;
+}).join(''); }
+
+// ---- Live data: fetch data.json from GitHub (free updates, no redeploy); fall back to embedded defaults ----
+function applyState(){
+  eliminated = new Set(ELIMINATED);
+  document.getElementById('syncText').innerHTML = `<strong>${STAGE}</strong> · last updated: ${LAST_SYNC}`;
+  render();
+  buildBracket();
+  tickCountdown();
+}
+fetch(DATA_URL + '?t=' + Date.now())
+  .then(r=> r.ok ? r.json() : Promise.reject())
+  .then(d=>{
+    if(typeof d.LAST_SYNC==='string') LAST_SYNC=d.LAST_SYNC;
+    if(typeof d.STAGE==='string') STAGE=d.STAGE;
+    if(Array.isArray(d.ELIMINATED)) ELIMINATED=d.ELIMINATED;
+    if(d.NEXT_MATCH!==undefined) NEXT_MATCH=d.NEXT_MATCH;
+    if(d.BRACKET) BRACKET=d.BRACKET;
+    if(d.RESULTS) RESULTS=d.RESULTS;
+    if(d.AWARDS) AWARDS=d.AWARDS;
+  })
+  .catch(()=>{})
+  .finally(applyState);
+</script>
+</body>
+</html>
