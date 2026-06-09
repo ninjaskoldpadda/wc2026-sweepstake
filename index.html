@@ -346,30 +346,14 @@ const FLAG = {
    LIVE STATE — auto-updated twice daily from real match results.
    The scheduled task rewrites ONLY the three values below.
    ============================================================ */
-const LAST_SYNC = "Not started yet — kicks off Thu 11 June";
-const STAGE     = "Pre-tournament";
-const ELIMINATED = [];   // e.g. ["Qatar","Canada"] once teams are knocked out
-const NEXT_MATCH = {     // updated each sync to the next upcoming fixture
-  label: "Mexico 🇲🇽 vs 🇿🇦 South Africa",
-  note:  "Opening match · Estadio Azteca",
-  kickoff: "2026-06-11T19:00:00Z"   // ISO UTC
-};
-// Knockout bracket — arrays of team-name strings, filled by the sync as teams advance.
-// Leave empty until the knockouts begin. Names must match the 48 team spellings.
-const BRACKET = {
-  "Round of 32":[], "Round of 16":[], "Quarter-Finals":[],
-  "Semi-Finals":[], "Final":[], "Champion":[]
-};
-// Per-team match record — ONLY list teams that have played. Default is 0-0-0.
-// Match points = wins×3 + draws×1.  e.g.  "Brazil":{w:2,d:1,l:0}
-const RESULTS = {};
-// Tournament award winners — set each to the TEAM NAME that earns it (the owner banks the bonus).
-// Points: champion +10, runnerUp +5, third +3, the rest +5 each.
-const AWARDS = {
-  champion:null, runnerUp:null, third:null,
-  goldenBoot:null, playerOfTournament:null, bestGoalkeeper:null,
-  mostYellowCards:null, mostGoalsConceded:null
-};
+const DATA_URL = "https://raw.githubusercontent.com/ninjaskoldpadda/wc2026-sweepstake/data/data.json";
+let LAST_SYNC = "Not started yet — kicks off Thu 11 June";
+let STAGE = "Pre-tournament";
+let ELIMINATED = [];
+let NEXT_MATCH = { label:"Mexico 🇲🇽 vs 🇿🇦 South Africa", note:"Opening match · Estadio Azteca", kickoff:"2026-06-11T19:00:00Z" };
+let BRACKET = { "Round of 32":[], "Round of 16":[], "Quarter-Finals":[], "Semi-Finals":[], "Final":[], "Champion":[] };
+let RESULTS = {};
+let AWARDS = { champion:null, runnerUp:null, third:null, goldenBoot:null, playerOfTournament:null, bestGoalkeeper:null, mostYellowCards:null, mostGoalsConceded:null };
 /* ============================================================ */
 
 // Light-hearted winning odds per player (pct just drives the bar)
@@ -424,7 +408,7 @@ function buildMeme(name,pct){
 const owner = {};
 PLAYERS.forEach((p,i)=>p.teams.forEach(t=>owner[t]=i));
 const ALL_TEAMS = PLAYERS.flatMap(p=>p.teams);
-const eliminated = new Set(ELIMINATED);
+let eliminated = new Set(ELIMINATED);
 
 // ---- Scoring engine ----
 const BONUSES = [
@@ -536,9 +520,6 @@ function toggle(t){
   if(eliminated.has(t)) eliminated.delete(t); else eliminated.add(t);
   render();
 }
-// Sync status line
-document.getElementById('syncText').innerHTML = `<strong>${STAGE}</strong> · last updated: ${LAST_SYNC}`;
-
 // Countdown to next game
 function pad(n){return String(n).padStart(2,'0');}
 function tickCountdown(){
@@ -566,12 +547,11 @@ function tickCountdown(){
   document.getElementById('cdM').textContent=pad(m);
   document.getElementById('cdS').textContent=pad(s);
 }
-tickCountdown();
 setInterval(tickCountdown,1000);
 
 // Bracket — data-driven, auto-filled by the sync (no typing)
 const ROUNDS = [["Round of 32",16],["Round of 16",8],["Quarter-Finals",4],["Semi-Finals",2],["Final",1],["Champion",1]];
-document.getElementById('bracket').innerHTML = ROUNDS.map(([name,n])=>{
+function buildBracket(){ document.getElementById('bracket').innerHTML = ROUNDS.map(([name,n])=>{
   const filled = (BRACKET[name]||[]);
   const slots = Array.from({length:n}).map((_,i)=>{
     const t = filled[i];
@@ -584,9 +564,29 @@ document.getElementById('bracket').innerHTML = ROUNDS.map(([name,n])=>{
     return `<div class="slot ${name==='Champion'?'final':''}">${name==='Champion'?'🏆':''}</div>`;
   }).join('');
   return `<div class="round"><h4>${name}</h4>${slots}</div>`;
-}).join('');
+}).join(''); }
 
-render();
+// ---- Live data: fetch data.json from GitHub (free updates, no redeploy); fall back to embedded defaults ----
+function applyState(){
+  eliminated = new Set(ELIMINATED);
+  document.getElementById('syncText').innerHTML = `<strong>${STAGE}</strong> · last updated: ${LAST_SYNC}`;
+  render();
+  buildBracket();
+  tickCountdown();
+}
+fetch(DATA_URL + '?t=' + Date.now())
+  .then(r=> r.ok ? r.json() : Promise.reject())
+  .then(d=>{
+    if(typeof d.LAST_SYNC==='string') LAST_SYNC=d.LAST_SYNC;
+    if(typeof d.STAGE==='string') STAGE=d.STAGE;
+    if(Array.isArray(d.ELIMINATED)) ELIMINATED=d.ELIMINATED;
+    if(d.NEXT_MATCH!==undefined) NEXT_MATCH=d.NEXT_MATCH;
+    if(d.BRACKET) BRACKET=d.BRACKET;
+    if(d.RESULTS) RESULTS=d.RESULTS;
+    if(d.AWARDS) AWARDS=d.AWARDS;
+  })
+  .catch(()=>{})
+  .finally(applyState);
 </script>
 </body>
 </html>
