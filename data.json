@@ -1,11 +1,11 @@
 {
-  "LAST_SYNC": "Thu 11 June, 18:03 UTC",
-  "STAGE": "Group stage — Matchday 1 (opening match kicks off today)",
+  "LAST_SYNC": "Thu 11 June, 21:30 UTC",
+  "STAGE": "Group stage — Matchday 1",
   "ELIMINATED": [],
   "NEXT_MATCH": {
-    "label": "Mexico 🇲🇽 vs 🇿🇦 South Africa",
-    "note": "Opening match · Estadio Azteca",
-    "kickoff": "2026-06-11T19:00:00Z"
+    "label": "South Korea 🇰🇷 vs 🇨🇿 Czechia",
+    "note": "Group stage · Estadio Akron, Guadalajara",
+    "kickoff": "2026-06-12T02:00:00Z"
   },
   "BRACKET": {
     "Round of 32": [],
@@ -15,7 +15,10 @@
     "Final": [],
     "Champion": []
   },
-  "RESULTS": {},
+  "RESULTS": {
+    "Mexico": {"w": 1, "d": 0, "l": 0},
+    "South Africa": {"w": 0, "d": 0, "l": 1}
+  },
   "AWARDS": {
     "champion": null,
     "runnerUp": null,
