@@ -116,6 +116,19 @@
   .ptot{font-size:24px;font-weight:800;color:var(--gold);line-height:1}
   .pbd{font-size:10.5px;color:var(--muted);margin-top:4px;white-space:nowrap}
   .tp{margin-left:auto;color:var(--green);font-weight:700;font-size:12px}
+  /* Results feed */
+  .results{display:flex;flex-direction:column;gap:8px}
+  .res{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:9px 12px}
+  .res-note{font-size:10.5px;color:var(--muted);text-transform:uppercase;letter-spacing:.06em;margin-bottom:6px;text-align:center}
+  .res-row{display:flex;align-items:center;gap:10px}
+  .res-team{flex:1;display:flex;align-items:center;gap:7px;min-width:0}
+  .res-team.right{justify-content:flex-end}
+  .res-team .rn{font-weight:600;font-size:14px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .res-team .fl{font-size:18px;flex:0 0 auto}
+  .res-team:not(.win) .rn{color:var(--muted)}
+  .res-score{font-weight:800;font-size:17px;background:var(--panel2);border-radius:8px;padding:3px 10px;white-space:nowrap}
+  .rdot{width:8px;height:8px;border-radius:50%;flex:0 0 auto}
+  .res-empty{color:var(--muted);font-size:14px;text-align:center;padding:10px}
   /* Scoring rules */
   .scoring{display:grid;grid-template-columns:1fr 1fr;gap:14px}
   .scoring .sc{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:16px 18px}
@@ -210,6 +223,13 @@
     <h2>The Points Table</h2>
     <p class="hint">Live standings — match points across all four of your teams, plus any tournament bonuses. Refreshed twice a day.</p>
     <div class="ptable" id="standingsBody"></div>
+  </section>
+
+  <!-- RESULTS -->
+  <section class="section">
+    <h2>Latest Results</h2>
+    <p class="hint">Finished matches, newest first. A team's owner is dotted in their colour.</p>
+    <div class="results" id="resultsList"></div>
   </section>
 
   <!-- SCORING RULES -->
@@ -354,6 +374,7 @@ let NEXT_MATCH = { label:"Mexico 🇲🇽 vs 🇿🇦 South Africa", note:"Openi
 let BRACKET = { "Round of 32":[], "Round of 16":[], "Quarter-Finals":[], "Semi-Finals":[], "Final":[], "Champion":[] };
 let RESULTS = {};
 let AWARDS = { champion:null, runnerUp:null, third:null, goldenBoot:null, playerOfTournament:null, bestGoalkeeper:null, mostYellowCards:null, mostGoalsConceded:null };
+let MATCHES = [];
 /* ============================================================ */
 
 // Light-hearted winning odds per player (pct just drives the bar)
@@ -567,10 +588,27 @@ function buildBracket(){ document.getElementById('bracket').innerHTML = ROUNDS.m
 }).join(''); }
 
 // ---- Live data: fetch data.json from GitHub (free updates, no redeploy); fall back to embedded defaults ----
+function renderResults(){
+  const el = document.getElementById('resultsList');
+  if(!Array.isArray(MATCHES) || !MATCHES.length){ el.innerHTML = '<div class="res-empty">No matches finished yet.</div>'; return; }
+  el.innerHTML = MATCHES.map(m=>{
+    const oa = PLAYERS[owner[m.a]], ob = PLAYERS[owner[m.b]];
+    const wa = m.sa>m.sb, wb = m.sb>m.sa;
+    return `<div class="res">
+      ${m.note?`<div class="res-note">${m.note}</div>`:''}
+      <div class="res-row">
+        <span class="res-team ${wa?'win':''}">${oa?`<span class="rdot" style="background:${oa.color}"></span>`:''}<span class="fl">${FLAG[m.a]||'🏳️'}</span><span class="rn">${m.a}</span></span>
+        <span class="res-score">${m.sa}–${m.sb}</span>
+        <span class="res-team right ${wb?'win':''}"><span class="rn">${m.b}</span><span class="fl">${FLAG[m.b]||'🏳️'}</span>${ob?`<span class="rdot" style="background:${ob.color}"></span>`:''}</span>
+      </div>
+    </div>`;
+  }).join('');
+}
 function applyState(){
   eliminated = new Set(ELIMINATED);
   document.getElementById('syncText').innerHTML = `<strong>${STAGE}</strong> · last updated: ${LAST_SYNC}`;
   render();
+  renderResults();
   buildBracket();
   tickCountdown();
 }
@@ -584,6 +622,7 @@ fetch(DATA_URL + '?t=' + Date.now())
     if(d.BRACKET) BRACKET=d.BRACKET;
     if(d.RESULTS) RESULTS=d.RESULTS;
     if(d.AWARDS) AWARDS=d.AWARDS;
+    if(Array.isArray(d.MATCHES)) MATCHES=d.MATCHES;
   })
   .catch(()=>{})
   .finally(applyState);
