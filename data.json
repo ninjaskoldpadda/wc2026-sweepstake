@@ -16,10 +16,26 @@
     "Champion": []
   },
   "RESULTS": {
-    "Mexico": {"w": 1, "d": 0, "l": 0},
-    "South Africa": {"w": 0, "d": 0, "l": 1},
-    "South Korea": {"w": 1, "d": 0, "l": 0},
-    "Czechia": {"w": 0, "d": 0, "l": 1}
+    "Mexico": {
+      "w": 1,
+      "d": 0,
+      "l": 0
+    },
+    "South Africa": {
+      "w": 0,
+      "d": 0,
+      "l": 1
+    },
+    "South Korea": {
+      "w": 1,
+      "d": 0,
+      "l": 0
+    },
+    "Czechia": {
+      "w": 0,
+      "d": 0,
+      "l": 1
+    }
   },
   "AWARDS": {
     "champion": null,
@@ -30,5 +46,21 @@
     "bestGoalkeeper": null,
     "mostYellowCards": null,
     "mostGoalsConceded": null
-  }
+  },
+  "MATCHES": [
+    {
+      "a": "South Korea",
+      "sa": 2,
+      "b": "Czechia",
+      "sb": 1,
+      "note": "Matchday 1"
+    },
+    {
+      "a": "Mexico",
+      "sa": 2,
+      "b": "South Africa",
+      "sb": 0,
+      "note": "Matchday 1 · Opening match"
+    }
+  ]
 }
