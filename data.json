@@ -1,11 +1,11 @@
 {
-  "LAST_SYNC": "Fri 12 June, 18:05 UTC",
+  "LAST_SYNC": "Fri 12 June, 23:05 UTC",
   "STAGE": "Group stage — Matchday 1",
   "ELIMINATED": [],
   "NEXT_MATCH": {
-    "label": "Canada 🇨🇦 vs 🇧🇦 Bosnia & Herzegovina",
-    "note": "Group stage · BMO Field, Toronto",
-    "kickoff": "2026-06-12T19:00:00Z"
+    "label": "USA 🇺🇸 vs 🇵🇾 Paraguay",
+    "note": "Group stage · SoFi Stadium, Inglewood",
+    "kickoff": "2026-06-13T01:00:00Z"
   },
   "BRACKET": {
     "Round of 32": [],
@@ -35,6 +35,16 @@
       "w": 0,
       "d": 0,
       "l": 1
+    },
+    "Canada": {
+      "w": 0,
+      "d": 1,
+      "l": 0
+    },
+    "Bosnia & Herzegovina": {
+      "w": 0,
+      "d": 1,
+      "l": 0
     }
   },
   "AWARDS": {
@@ -48,6 +58,13 @@
     "mostGoalsConceded": null
   },
   "MATCHES": [
+    {
+      "a": "Canada",
+      "sa": 1,
+      "b": "Bosnia & Herzegovina",
+      "sb": 1,
+      "note": "Matchday 1"
+    },
     {
       "a": "South Korea",
       "sa": 2,
