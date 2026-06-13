@@ -1,11 +1,11 @@
 {
-  "LAST_SYNC": "Fri 12 June, 23:05 UTC",
+  "LAST_SYNC": "Sat 13 June, 06:05 UTC",
   "STAGE": "Group stage — Matchday 1",
   "ELIMINATED": [],
   "NEXT_MATCH": {
-    "label": "USA 🇺🇸 vs 🇵🇾 Paraguay",
-    "note": "Group stage · SoFi Stadium, Inglewood",
-    "kickoff": "2026-06-13T01:00:00Z"
+    "label": "Qatar 🇶🇦 vs 🇨🇭 Switzerland",
+    "note": "Group stage · Levi's Stadium, Santa Clara",
+    "kickoff": "2026-06-13T19:00:00Z"
   },
   "BRACKET": {
     "Round of 32": [],
@@ -45,6 +45,16 @@
       "w": 0,
       "d": 1,
       "l": 0
+    },
+    "USA": {
+      "w": 1,
+      "d": 0,
+      "l": 0
+    },
+    "Paraguay": {
+      "w": 0,
+      "d": 0,
+      "l": 1
     }
   },
   "AWARDS": {
@@ -58,6 +68,13 @@
     "mostGoalsConceded": null
   },
   "MATCHES": [
+    {
+      "a": "USA",
+      "sa": 4,
+      "b": "Paraguay",
+      "sb": 1,
+      "note": "Matchday 1"
+    },
     {
       "a": "Canada",
       "sa": 1,
