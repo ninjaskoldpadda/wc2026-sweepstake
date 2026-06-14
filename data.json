@@ -1,11 +1,11 @@
 {
-  "LAST_SYNC": "Sat 13 June, 23:05 UTC",
+  "LAST_SYNC": "Sun 14 June, 06:05 UTC",
   "STAGE": "Group stage — Matchday 1",
   "ELIMINATED": [],
   "NEXT_MATCH": {
-    "label": "Haiti 🇭🇹 vs 🏴󠁧󠁢󠁳󠁣󠁴󠁿 Scotland",
-    "note": "Group stage · Gillette Stadium, Foxborough",
-    "kickoff": "2026-06-14T01:00:00Z"
+    "label": "Germany 🇩🇪 vs 🇨🇼 Curaçao",
+    "note": "Group stage · Group E",
+    "kickoff": "2026-06-14T17:00:00Z"
   },
   "BRACKET": {
     "Round of 32": [],
@@ -16,56 +16,22 @@
     "Champion": []
   },
   "RESULTS": {
-    "Mexico": {
-      "w": 1,
-      "d": 0,
-      "l": 0
-    },
-    "South Africa": {
-      "w": 0,
-      "d": 0,
-      "l": 1
-    },
-    "South Korea": {
-      "w": 1,
-      "d": 0,
-      "l": 0
-    },
-    "Czechia": {
-      "w": 0,
-      "d": 0,
-      "l": 1
-    },
-    "Canada": {
-      "w": 0,
-      "d": 1,
-      "l": 0
-    },
-    "Bosnia & Herzegovina": {
-      "w": 0,
-      "d": 1,
-      "l": 0
-    },
-    "USA": {
-      "w": 1,
-      "d": 0,
-      "l": 0
-    },
-    "Paraguay": {
-      "w": 0,
-      "d": 0,
-      "l": 1
-    },
-    "Qatar": {
-      "w": 0,
-      "d": 1,
-      "l": 0
-    },
-    "Switzerland": {
-      "w": 0,
-      "d": 1,
-      "l": 0
-    }
+    "Mexico": { "w": 1, "d": 0, "l": 0 },
+    "South Africa": { "w": 0, "d": 0, "l": 1 },
+    "South Korea": { "w": 1, "d": 0, "l": 0 },
+    "Czechia": { "w": 0, "d": 0, "l": 1 },
+    "Canada": { "w": 0, "d": 1, "l": 0 },
+    "Bosnia & Herzegovina": { "w": 0, "d": 1, "l": 0 },
+    "USA": { "w": 1, "d": 0, "l": 0 },
+    "Paraguay": { "w": 0, "d": 0, "l": 1 },
+    "Qatar": { "w": 0, "d": 1, "l": 0 },
+    "Switzerland": { "w": 0, "d": 1, "l": 0 },
+    "Brazil": { "w": 0, "d": 1, "l": 0 },
+    "Morocco": { "w": 0, "d": 1, "l": 0 },
+    "Scotland": { "w": 1, "d": 0, "l": 0 },
+    "Haiti": { "w": 0, "d": 0, "l": 1 },
+    "Australia": { "w": 1, "d": 0, "l": 0 },
+    "Turkey": { "w": 0, "d": 0, "l": 1 }
   },
   "AWARDS": {
     "champion": null,
@@ -78,6 +44,27 @@
     "mostGoalsConceded": null
   },
   "MATCHES": [
+    {
+      "a": "Australia",
+      "sa": 2,
+      "b": "Turkey",
+      "sb": 0,
+      "note": "Matchday 1"
+    },
+    {
+      "a": "Haiti",
+      "sa": 0,
+      "b": "Scotland",
+      "sb": 1,
+      "note": "Matchday 1"
+    },
+    {
+      "a": "Brazil",
+      "sa": 1,
+      "b": "Morocco",
+      "sb": 1,
+      "note": "Matchday 1"
+    },
     {
       "a": "Qatar",
       "sa": 1,
