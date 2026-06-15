@@ -1,11 +1,11 @@
 {
-  "LAST_SYNC": "Mon 15 June, 06:03 UTC",
+  "LAST_SYNC": "Mon 15 June, 18:03 UTC",
   "STAGE": "Group stage — Matchday 1",
   "ELIMINATED": [],
   "NEXT_MATCH": {
-    "label": "Spain 🇪🇸 vs 🇨🇻 Cape Verde",
-    "note": "Group stage · Group H · Atlanta",
-    "kickoff": "2026-06-15T17:00:00Z"
+    "label": "Belgium 🇧🇪 vs 🇪🇬 Egypt",
+    "note": "Group stage · Group G · Seattle",
+    "kickoff": "2026-06-15T19:00:00Z"
   },
   "BRACKET": {
     "Round of 32": [],
@@ -39,7 +39,9 @@
     "Ivory Coast": { "w": 1, "d": 0, "l": 0 },
     "Ecuador": { "w": 0, "d": 0, "l": 1 },
     "Sweden": { "w": 1, "d": 0, "l": 0 },
-    "Tunisia": { "w": 0, "d": 0, "l": 1 }
+    "Tunisia": { "w": 0, "d": 0, "l": 1 },
+    "Spain": { "w": 0, "d": 1, "l": 0 },
+    "Cape Verde": { "w": 0, "d": 1, "l": 0 }
   },
   "AWARDS": {
     "champion": null,
@@ -52,6 +54,13 @@
     "mostGoalsConceded": null
   },
   "MATCHES": [
+    {
+      "a": "Spain",
+      "sa": 0,
+      "b": "Cape Verde",
+      "sb": 0,
+      "note": "Matchday 1"
+    },
     {
       "a": "Sweden",
       "sa": 5,
