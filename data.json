@@ -1,11 +1,11 @@
 {
-  "LAST_SYNC": "Mon 15 June, 23:03 UTC",
+  "LAST_SYNC": "Tue 16 June, 06:04 UTC",
   "STAGE": "Group stage — Matchday 1",
   "ELIMINATED": [],
   "NEXT_MATCH": {
-    "label": "Iran 🇮🇷 vs 🇳🇿 New Zealand",
-    "note": "Group stage · Group G · Los Angeles",
-    "kickoff": "2026-06-16T01:00:00Z"
+    "label": "France 🇫🇷 vs 🇸🇳 Senegal",
+    "note": "Group stage · Group I · MetLife Stadium",
+    "kickoff": "2026-06-16T19:00:00Z"
   },
   "BRACKET": {
     "Round of 32": [],
@@ -43,7 +43,11 @@
     "Spain": { "w": 0, "d": 1, "l": 0 },
     "Cape Verde": { "w": 0, "d": 1, "l": 0 },
     "Belgium": { "w": 0, "d": 1, "l": 0 },
-    "Egypt": { "w": 0, "d": 1, "l": 0 }
+    "Egypt": { "w": 0, "d": 1, "l": 0 },
+    "Iran": { "w": 0, "d": 1, "l": 0 },
+    "New Zealand": { "w": 0, "d": 1, "l": 0 },
+    "Saudi Arabia": { "w": 0, "d": 1, "l": 0 },
+    "Uruguay": { "w": 0, "d": 1, "l": 0 }
   },
   "AWARDS": {
     "champion": null,
@@ -56,6 +60,20 @@
     "mostGoalsConceded": null
   },
   "MATCHES": [
+    {
+      "a": "Iran",
+      "sa": 2,
+      "b": "New Zealand",
+      "sb": 2,
+      "note": "Matchday 1"
+    },
+    {
+      "a": "Saudi Arabia",
+      "sa": 1,
+      "b": "Uruguay",
+      "sb": 1,
+      "note": "Matchday 1"
+    },
     {
       "a": "Belgium",
       "sa": 1,
