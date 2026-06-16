@@ -1,11 +1,11 @@
 {
-  "LAST_SYNC": "Tue 16 June, 18:03 UTC",
+  "LAST_SYNC": "Tue 16 June, 23:03 UTC",
   "STAGE": "Group stage — Matchday 1",
   "ELIMINATED": [],
   "NEXT_MATCH": {
-    "label": "France 🇫🇷 vs 🇸🇳 Senegal",
-    "note": "Group stage · Group I · MetLife Stadium",
-    "kickoff": "2026-06-16T19:00:00Z"
+    "label": "Argentina 🇦🇷 vs 🇩🇿 Algeria",
+    "note": "Group stage · Group J · Arrowhead Stadium",
+    "kickoff": "2026-06-17T01:00:00Z"
   },
   "BRACKET": {
     "Round of 32": [],
@@ -47,7 +47,9 @@
     "Iran": { "w": 0, "d": 1, "l": 0 },
     "New Zealand": { "w": 0, "d": 1, "l": 0 },
     "Saudi Arabia": { "w": 0, "d": 1, "l": 0 },
-    "Uruguay": { "w": 0, "d": 1, "l": 0 }
+    "Uruguay": { "w": 0, "d": 1, "l": 0 },
+    "France": { "w": 1, "d": 0, "l": 0 },
+    "Senegal": { "w": 0, "d": 0, "l": 1 }
   },
   "AWARDS": {
     "champion": null,
@@ -60,6 +62,13 @@
     "mostGoalsConceded": null
   },
   "MATCHES": [
+    {
+      "a": "France",
+      "sa": 3,
+      "b": "Senegal",
+      "sb": 1,
+      "note": "Matchday 1"
+    },
     {
       "a": "Iran",
       "sa": 2,
