@@ -1,11 +1,11 @@
 {
-  "LAST_SYNC": "Thu 18 June, 18:05 UTC",
+  "LAST_SYNC": "Thu 18 June, 23:05 UTC",
   "STAGE": "Group stage — Matchday 2",
   "ELIMINATED": [],
   "NEXT_MATCH": {
-    "label": "Switzerland 🇨🇭 vs 🇧🇦 Bosnia & Herzegovina",
-    "note": "Group stage · Group B · Inglewood",
-    "kickoff": "2026-06-18T19:00:00Z"
+    "label": "Mexico 🇲🇽 vs 🇰🇷 South Korea",
+    "note": "Group stage · Group A · Guadalajara",
+    "kickoff": "2026-06-19T01:00:00Z"
   },
   "BRACKET": {
     "Round of 32": [],
@@ -17,15 +17,15 @@
   },
   "RESULTS": {
     "Mexico": { "w": 1, "d": 0, "l": 0 },
-    "South Africa": { "w": 0, "d": 0, "l": 1 },
+    "South Africa": { "w": 0, "d": 1, "l": 1 },
     "South Korea": { "w": 1, "d": 0, "l": 0 },
-    "Czechia": { "w": 0, "d": 0, "l": 1 },
+    "Czechia": { "w": 0, "d": 1, "l": 1 },
     "Canada": { "w": 0, "d": 1, "l": 0 },
-    "Bosnia & Herzegovina": { "w": 0, "d": 1, "l": 0 },
+    "Bosnia & Herzegovina": { "w": 0, "d": 1, "l": 1 },
     "USA": { "w": 1, "d": 0, "l": 0 },
     "Paraguay": { "w": 0, "d": 0, "l": 1 },
     "Qatar": { "w": 0, "d": 1, "l": 0 },
-    "Switzerland": { "w": 0, "d": 1, "l": 0 },
+    "Switzerland": { "w": 1, "d": 1, "l": 0 },
     "Brazil": { "w": 0, "d": 1, "l": 0 },
     "Morocco": { "w": 0, "d": 1, "l": 0 },
     "Scotland": { "w": 1, "d": 0, "l": 0 },
@@ -76,6 +76,20 @@
     "mostGoalsConceded": null
   },
   "MATCHES": [
+    {
+      "a": "Switzerland",
+      "sa": 4,
+      "b": "Bosnia & Herzegovina",
+      "sb": 1,
+      "note": "Matchday 2"
+    },
+    {
+      "a": "Czechia",
+      "sa": 1,
+      "b": "South Africa",
+      "sb": 1,
+      "note": "Matchday 2"
+    },
     {
       "a": "Uzbekistan",
       "sa": 1,
