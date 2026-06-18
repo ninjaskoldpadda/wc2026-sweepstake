@@ -1,11 +1,11 @@
 {
-  "LAST_SYNC": "Wed 17 June, 23:05 UTC",
-  "STAGE": "Group stage — Matchday 1",
+  "LAST_SYNC": "Thu 18 June, 06:05 UTC",
+  "STAGE": "Group stage — Matchday 2",
   "ELIMINATED": [],
   "NEXT_MATCH": {
-    "label": "Uzbekistan 🇺🇿 vs 🇨🇴 Colombia",
-    "note": "Group stage · Group K · Estadio Azteca",
-    "kickoff": "2026-06-18T02:00:00Z"
+    "label": "Czechia 🇨🇿 vs 🇿🇦 South Africa",
+    "note": "Group stage · Group A · Atlanta",
+    "kickoff": "2026-06-18T16:00:00Z"
   },
   "BRACKET": {
     "Round of 32": [],
@@ -61,7 +61,9 @@
     "Portugal": { "w": 0, "d": 1, "l": 0 },
     "DR Congo": { "w": 0, "d": 1, "l": 0 },
     "Ghana": { "w": 0, "d": 1, "l": 0 },
-    "Panama": { "w": 0, "d": 1, "l": 0 }
+    "Panama": { "w": 0, "d": 1, "l": 0 },
+    "Colombia": { "w": 1, "d": 0, "l": 0 },
+    "Uzbekistan": { "w": 0, "d": 0, "l": 1 }
   },
   "AWARDS": {
     "champion": null,
@@ -74,6 +76,13 @@
     "mostGoalsConceded": null
   },
   "MATCHES": [
+    {
+      "a": "Uzbekistan",
+      "sa": 1,
+      "b": "Colombia",
+      "sb": 3,
+      "note": "Matchday 1"
+    },
     {
       "a": "Ghana",
       "sa": 0,
