@@ -1,11 +1,11 @@
 {
-  "LAST_SYNC": "Thu 18 June, 23:05 UTC",
+  "LAST_SYNC": "Fri 19 June, 06:04 UTC",
   "STAGE": "Group stage — Matchday 2",
   "ELIMINATED": [],
   "NEXT_MATCH": {
-    "label": "Mexico 🇲🇽 vs 🇰🇷 South Korea",
-    "note": "Group stage · Group A · Guadalajara",
-    "kickoff": "2026-06-19T01:00:00Z"
+    "label": "USA 🇺🇸 vs 🇦🇺 Australia",
+    "note": "Group stage · Group D · Seattle",
+    "kickoff": "2026-06-19T19:00:00Z"
   },
   "BRACKET": {
     "Round of 32": [],
@@ -16,15 +16,15 @@
     "Champion": []
   },
   "RESULTS": {
-    "Mexico": { "w": 1, "d": 0, "l": 0 },
+    "Mexico": { "w": 2, "d": 0, "l": 0 },
     "South Africa": { "w": 0, "d": 1, "l": 1 },
-    "South Korea": { "w": 1, "d": 0, "l": 0 },
+    "South Korea": { "w": 1, "d": 0, "l": 1 },
     "Czechia": { "w": 0, "d": 1, "l": 1 },
-    "Canada": { "w": 0, "d": 1, "l": 0 },
+    "Canada": { "w": 1, "d": 1, "l": 0 },
     "Bosnia & Herzegovina": { "w": 0, "d": 1, "l": 1 },
     "USA": { "w": 1, "d": 0, "l": 0 },
     "Paraguay": { "w": 0, "d": 0, "l": 1 },
-    "Qatar": { "w": 0, "d": 1, "l": 0 },
+    "Qatar": { "w": 0, "d": 1, "l": 1 },
     "Switzerland": { "w": 1, "d": 1, "l": 0 },
     "Brazil": { "w": 0, "d": 1, "l": 0 },
     "Morocco": { "w": 0, "d": 1, "l": 0 },
@@ -76,6 +76,20 @@
     "mostGoalsConceded": null
   },
   "MATCHES": [
+    {
+      "a": "Mexico",
+      "sa": 1,
+      "b": "South Korea",
+      "sb": 0,
+      "note": "Matchday 2"
+    },
+    {
+      "a": "Canada",
+      "sa": 6,
+      "b": "Qatar",
+      "sb": 0,
+      "note": "Matchday 2"
+    },
     {
       "a": "Switzerland",
       "sa": 4,
