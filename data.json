@@ -1,11 +1,11 @@
 {
-  "LAST_SYNC": "Fri 19 June, 18:04 UTC",
+  "LAST_SYNC": "Fri 19 June, 23:04 UTC",
   "STAGE": "Group stage — Matchday 2",
   "ELIMINATED": [],
   "NEXT_MATCH": {
-    "label": "USA 🇺🇸 vs 🇦🇺 Australia",
-    "note": "Group stage · Group D · Seattle",
-    "kickoff": "2026-06-19T19:00:00Z"
+    "label": "Brazil 🇧🇷 vs 🇭🇹 Haiti",
+    "note": "Group stage · Matchday 2 · Philadelphia",
+    "kickoff": "2026-06-20T00:30:00Z"
   },
   "BRACKET": {
     "Round of 32": [],
@@ -47,7 +47,7 @@
       "l": 1
     },
     "USA": {
-      "w": 1,
+      "w": 2,
       "d": 0,
       "l": 0
     },
@@ -89,7 +89,7 @@
     "Australia": {
       "w": 1,
       "d": 0,
-      "l": 0
+      "l": 1
     },
     "Turkey": {
       "w": 0,
@@ -268,6 +268,13 @@
     "mostGoalsConceded": null
   },
   "MATCHES": [
+    {
+      "a": "USA",
+      "sa": 2,
+      "b": "Australia",
+      "sb": 0,
+      "note": "Matchday 2"
+    },
     {
       "a": "Mexico",
       "sa": 1,
