@@ -16,54 +16,246 @@
     "Champion": []
   },
   "RESULTS": {
-    "Mexico": { "w": 2, "d": 0, "l": 0 },
-    "South Africa": { "w": 0, "d": 1, "l": 1 },
-    "South Korea": { "w": 1, "d": 0, "l": 1 },
-    "Czechia": { "w": 0, "d": 1, "l": 1 },
-    "Canada": { "w": 1, "d": 1, "l": 0 },
-    "Bosnia & Herzegovina": { "w": 0, "d": 1, "l": 1 },
-    "USA": { "w": 1, "d": 0, "l": 0 },
-    "Paraguay": { "w": 0, "d": 0, "l": 1 },
-    "Qatar": { "w": 0, "d": 1, "l": 1 },
-    "Switzerland": { "w": 1, "d": 1, "l": 0 },
-    "Brazil": { "w": 0, "d": 1, "l": 0 },
-    "Morocco": { "w": 0, "d": 1, "l": 0 },
-    "Scotland": { "w": 1, "d": 0, "l": 0 },
-    "Haiti": { "w": 0, "d": 0, "l": 1 },
-    "Australia": { "w": 1, "d": 0, "l": 0 },
-    "Turkey": { "w": 0, "d": 0, "l": 1 },
-    "Germany": { "w": 1, "d": 0, "l": 0 },
-    "Curaçao": { "w": 0, "d": 0, "l": 1 },
-    "Netherlands": { "w": 0, "d": 1, "l": 0 },
-    "Japan": { "w": 0, "d": 1, "l": 0 },
-    "Ivory Coast": { "w": 1, "d": 0, "l": 0 },
-    "Ecuador": { "w": 0, "d": 0, "l": 1 },
-    "Sweden": { "w": 1, "d": 0, "l": 0 },
-    "Tunisia": { "w": 0, "d": 0, "l": 1 },
-    "Spain": { "w": 0, "d": 1, "l": 0 },
-    "Cape Verde": { "w": 0, "d": 1, "l": 0 },
-    "Belgium": { "w": 0, "d": 1, "l": 0 },
-    "Egypt": { "w": 0, "d": 1, "l": 0 },
-    "Iran": { "w": 0, "d": 1, "l": 0 },
-    "New Zealand": { "w": 0, "d": 1, "l": 0 },
-    "Saudi Arabia": { "w": 0, "d": 1, "l": 0 },
-    "Uruguay": { "w": 0, "d": 1, "l": 0 },
-    "France": { "w": 1, "d": 0, "l": 0 },
-    "Senegal": { "w": 0, "d": 0, "l": 1 },
-    "Norway": { "w": 1, "d": 0, "l": 0 },
-    "Iraq": { "w": 0, "d": 0, "l": 1 },
-    "Argentina": { "w": 1, "d": 0, "l": 0 },
-    "Algeria": { "w": 0, "d": 0, "l": 1 },
-    "Austria": { "w": 1, "d": 0, "l": 0 },
-    "Jordan": { "w": 0, "d": 0, "l": 1 },
-    "England": { "w": 1, "d": 0, "l": 0 },
-    "Croatia": { "w": 0, "d": 0, "l": 1 },
-    "Portugal": { "w": 0, "d": 1, "l": 0 },
-    "DR Congo": { "w": 0, "d": 1, "l": 0 },
-    "Ghana": { "w": 0, "d": 1, "l": 0 },
-    "Panama": { "w": 0, "d": 1, "l": 0 },
-    "Colombia": { "w": 1, "d": 0, "l": 0 },
-    "Uzbekistan": { "w": 0, "d": 0, "l": 1 }
+    "Mexico": {
+      "w": 2,
+      "d": 0,
+      "l": 0
+    },
+    "South Africa": {
+      "w": 0,
+      "d": 1,
+      "l": 1
+    },
+    "South Korea": {
+      "w": 1,
+      "d": 0,
+      "l": 1
+    },
+    "Czechia": {
+      "w": 0,
+      "d": 1,
+      "l": 1
+    },
+    "Canada": {
+      "w": 1,
+      "d": 1,
+      "l": 0
+    },
+    "Bosnia & Herzegovina": {
+      "w": 0,
+      "d": 1,
+      "l": 1
+    },
+    "USA": {
+      "w": 1,
+      "d": 0,
+      "l": 0
+    },
+    "Paraguay": {
+      "w": 0,
+      "d": 0,
+      "l": 1
+    },
+    "Qatar": {
+      "w": 0,
+      "d": 1,
+      "l": 1
+    },
+    "Switzerland": {
+      "w": 1,
+      "d": 1,
+      "l": 0
+    },
+    "Brazil": {
+      "w": 0,
+      "d": 1,
+      "l": 0
+    },
+    "Morocco": {
+      "w": 0,
+      "d": 1,
+      "l": 0
+    },
+    "Scotland": {
+      "w": 1,
+      "d": 0,
+      "l": 0
+    },
+    "Haiti": {
+      "w": 0,
+      "d": 0,
+      "l": 1
+    },
+    "Australia": {
+      "w": 1,
+      "d": 0,
+      "l": 0
+    },
+    "Turkey": {
+      "w": 0,
+      "d": 0,
+      "l": 1
+    },
+    "Germany": {
+      "w": 1,
+      "d": 0,
+      "l": 0
+    },
+    "Curaçao": {
+      "w": 0,
+      "d": 0,
+      "l": 1
+    },
+    "Netherlands": {
+      "w": 0,
+      "d": 1,
+      "l": 0
+    },
+    "Japan": {
+      "w": 0,
+      "d": 1,
+      "l": 0
+    },
+    "Ivory Coast": {
+      "w": 1,
+      "d": 0,
+      "l": 0
+    },
+    "Ecuador": {
+      "w": 0,
+      "d": 0,
+      "l": 1
+    },
+    "Sweden": {
+      "w": 1,
+      "d": 0,
+      "l": 0
+    },
+    "Tunisia": {
+      "w": 0,
+      "d": 0,
+      "l": 1
+    },
+    "Spain": {
+      "w": 0,
+      "d": 1,
+      "l": 0
+    },
+    "Cape Verde": {
+      "w": 0,
+      "d": 1,
+      "l": 0
+    },
+    "Belgium": {
+      "w": 0,
+      "d": 1,
+      "l": 0
+    },
+    "Egypt": {
+      "w": 0,
+      "d": 1,
+      "l": 0
+    },
+    "Iran": {
+      "w": 0,
+      "d": 1,
+      "l": 0
+    },
+    "New Zealand": {
+      "w": 0,
+      "d": 1,
+      "l": 0
+    },
+    "Saudi Arabia": {
+      "w": 0,
+      "d": 1,
+      "l": 0
+    },
+    "Uruguay": {
+      "w": 0,
+      "d": 1,
+      "l": 0
+    },
+    "France": {
+      "w": 1,
+      "d": 0,
+      "l": 0
+    },
+    "Senegal": {
+      "w": 0,
+      "d": 0,
+      "l": 1
+    },
+    "Norway": {
+      "w": 1,
+      "d": 0,
+      "l": 0
+    },
+    "Iraq": {
+      "w": 0,
+      "d": 0,
+      "l": 1
+    },
+    "Argentina": {
+      "w": 1,
+      "d": 0,
+      "l": 0
+    },
+    "Algeria": {
+      "w": 0,
+      "d": 0,
+      "l": 1
+    },
+    "Austria": {
+      "w": 1,
+      "d": 0,
+      "l": 0
+    },
+    "Jordan": {
+      "w": 0,
+      "d": 0,
+      "l": 1
+    },
+    "England": {
+      "w": 1,
+      "d": 0,
+      "l": 0
+    },
+    "Croatia": {
+      "w": 0,
+      "d": 0,
+      "l": 1
+    },
+    "Portugal": {
+      "w": 0,
+      "d": 1,
+      "l": 0
+    },
+    "DR Congo": {
+      "w": 0,
+      "d": 1,
+      "l": 0
+    },
+    "Ghana": {
+      "w": 0,
+      "d": 1,
+      "l": 0
+    },
+    "Panama": {
+      "w": 0,
+      "d": 1,
+      "l": 0
+    },
+    "Colombia": {
+      "w": 1,
+      "d": 0,
+      "l": 0
+    },
+    "Uzbekistan": {
+      "w": 0,
+      "d": 0,
+      "l": 1
+    }
   },
   "AWARDS": {
     "champion": null,
@@ -134,7 +326,7 @@
     },
     {
       "a": "Austria",
-      "sa": 2,
+      "sa": 3,
       "b": "Jordan",
       "sb": 1,
       "note": "Matchday 1"
