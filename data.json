@@ -1,11 +1,11 @@
 {
-  "LAST_SYNC": "Fri 19 June, 23:04 UTC",
+  "LAST_SYNC": "Sat 20 June, 06:05 UTC",
   "STAGE": "Group stage — Matchday 2",
   "ELIMINATED": [],
   "NEXT_MATCH": {
-    "label": "Brazil 🇧🇷 vs 🇭🇹 Haiti",
-    "note": "Group stage · Matchday 2 · Philadelphia",
-    "kickoff": "2026-06-20T00:30:00Z"
+    "label": "Netherlands 🇳🇱 vs 🇸🇪 Sweden",
+    "note": "Group stage · Matchday 2",
+    "kickoff": "2026-06-20T17:00:00Z"
   },
   "BRACKET": {
     "Round of 32": [],
@@ -52,7 +52,7 @@
       "l": 0
     },
     "Paraguay": {
-      "w": 0,
+      "w": 1,
       "d": 0,
       "l": 1
     },
@@ -67,24 +67,24 @@
       "l": 0
     },
     "Brazil": {
-      "w": 0,
+      "w": 1,
       "d": 1,
       "l": 0
     },
     "Morocco": {
-      "w": 0,
+      "w": 1,
       "d": 1,
       "l": 0
     },
     "Scotland": {
       "w": 1,
       "d": 0,
-      "l": 0
+      "l": 1
     },
     "Haiti": {
       "w": 0,
       "d": 0,
-      "l": 1
+      "l": 2
     },
     "Australia": {
       "w": 1,
@@ -94,7 +94,7 @@
     "Turkey": {
       "w": 0,
       "d": 0,
-      "l": 1
+      "l": 2
     },
     "Germany": {
       "w": 1,
@@ -268,6 +268,27 @@
     "mostGoalsConceded": null
   },
   "MATCHES": [
+    {
+      "a": "Paraguay",
+      "sa": 1,
+      "b": "Turkey",
+      "sb": 0,
+      "note": "Matchday 2"
+    },
+    {
+      "a": "Brazil",
+      "sa": 3,
+      "b": "Haiti",
+      "sb": 0,
+      "note": "Matchday 2"
+    },
+    {
+      "a": "Morocco",
+      "sa": 1,
+      "b": "Scotland",
+      "sb": 0,
+      "note": "Matchday 2"
+    },
     {
       "a": "USA",
       "sa": 2,
