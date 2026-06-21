@@ -1,11 +1,11 @@
 {
-  "LAST_SYNC": "Sun 21 June, 06:05 UTC",
+  "LAST_SYNC": "Sun 21 June, 18:05 UTC",
   "STAGE": "Group stage — Matchday 2",
-  "ELIMINATED": [],
+  "ELIMINATED": ["Tunisia"],
   "NEXT_MATCH": {
-    "label": "Spain 🇪🇸 vs 🇸🇦 Saudi Arabia",
-    "note": "Group stage · Matchday 2 · Mercedes-Benz Stadium, Atlanta",
-    "kickoff": "2026-06-21T16:00:00Z"
+    "label": "Belgium 🇧🇪 vs 🇮🇷 Iran",
+    "note": "Group stage · Matchday 2 · SoFi Stadium, Inglewood",
+    "kickoff": "2026-06-21T19:00:00Z"
   },
   "BRACKET": {
     "Round of 32": [],
@@ -112,7 +112,7 @@
       "l": 0
     },
     "Japan": {
-      "w": 0,
+      "w": 1,
       "d": 1,
       "l": 0
     },
@@ -134,10 +134,10 @@
     "Tunisia": {
       "w": 0,
       "d": 0,
-      "l": 1
+      "l": 2
     },
     "Spain": {
-      "w": 0,
+      "w": 1,
       "d": 1,
       "l": 0
     },
@@ -169,7 +169,7 @@
     "Saudi Arabia": {
       "w": 0,
       "d": 1,
-      "l": 0
+      "l": 1
     },
     "Uruguay": {
       "w": 0,
@@ -268,6 +268,20 @@
     "mostGoalsConceded": null
   },
   "MATCHES": [
+    {
+      "a": "Spain",
+      "sa": 4,
+      "b": "Saudi Arabia",
+      "sb": 0,
+      "note": "Matchday 2"
+    },
+    {
+      "a": "Tunisia",
+      "sa": 0,
+      "b": "Japan",
+      "sb": 4,
+      "note": "Matchday 2"
+    },
     {
       "a": "Ecuador",
       "sa": 0,
