@@ -1,11 +1,11 @@
 {
-  "LAST_SYNC": "Sat 20 June, 18:05 UTC",
+  "LAST_SYNC": "Sun 21 June, 06:05 UTC",
   "STAGE": "Group stage — Matchday 2",
   "ELIMINATED": [],
   "NEXT_MATCH": {
-    "label": "Germany 🇩🇪 vs 🇨🇮 Ivory Coast",
-    "note": "Group stage · Matchday 2 · BMO Field, Toronto",
-    "kickoff": "2026-06-20T20:00:00Z"
+    "label": "Spain 🇪🇸 vs 🇸🇦 Saudi Arabia",
+    "note": "Group stage · Matchday 2 · Mercedes-Benz Stadium, Atlanta",
+    "kickoff": "2026-06-21T16:00:00Z"
   },
   "BRACKET": {
     "Round of 32": [],
@@ -97,17 +97,17 @@
       "l": 2
     },
     "Germany": {
-      "w": 1,
+      "w": 2,
       "d": 0,
       "l": 0
     },
     "Curaçao": {
       "w": 0,
-      "d": 0,
+      "d": 1,
       "l": 1
     },
     "Netherlands": {
-      "w": 0,
+      "w": 1,
       "d": 1,
       "l": 0
     },
@@ -119,17 +119,17 @@
     "Ivory Coast": {
       "w": 1,
       "d": 0,
-      "l": 0
+      "l": 1
     },
     "Ecuador": {
       "w": 0,
-      "d": 0,
+      "d": 1,
       "l": 1
     },
     "Sweden": {
       "w": 1,
       "d": 0,
-      "l": 0
+      "l": 1
     },
     "Tunisia": {
       "w": 0,
@@ -268,6 +268,27 @@
     "mostGoalsConceded": null
   },
   "MATCHES": [
+    {
+      "a": "Ecuador",
+      "sa": 0,
+      "b": "Curaçao",
+      "sb": 0,
+      "note": "Matchday 2"
+    },
+    {
+      "a": "Germany",
+      "sa": 2,
+      "b": "Ivory Coast",
+      "sb": 1,
+      "note": "Matchday 2"
+    },
+    {
+      "a": "Netherlands",
+      "sa": 5,
+      "b": "Sweden",
+      "sb": 1,
+      "note": "Matchday 2"
+    },
     {
       "a": "Paraguay",
       "sa": 1,
