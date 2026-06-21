@@ -1,11 +1,11 @@
 {
-  "LAST_SYNC": "Sun 21 June, 18:05 UTC",
+  "LAST_SYNC": "Sun 21 June, 23:05 UTC",
   "STAGE": "Group stage — Matchday 2",
   "ELIMINATED": ["Tunisia"],
   "NEXT_MATCH": {
-    "label": "Belgium 🇧🇪 vs 🇮🇷 Iran",
-    "note": "Group stage · Matchday 2 · SoFi Stadium, Inglewood",
-    "kickoff": "2026-06-21T19:00:00Z"
+    "label": "Egypt 🇪🇬 vs 🇳🇿 New Zealand",
+    "note": "Group stage · Matchday 2 · BC Place, Vancouver",
+    "kickoff": "2026-06-22T04:00:00Z"
   },
   "BRACKET": {
     "Round of 32": [],
@@ -144,11 +144,11 @@
     "Cape Verde": {
       "w": 0,
       "d": 1,
-      "l": 0
+      "l": 1
     },
     "Belgium": {
       "w": 0,
-      "d": 1,
+      "d": 2,
       "l": 0
     },
     "Egypt": {
@@ -158,7 +158,7 @@
     },
     "Iran": {
       "w": 0,
-      "d": 1,
+      "d": 2,
       "l": 0
     },
     "New Zealand": {
@@ -172,7 +172,7 @@
       "l": 1
     },
     "Uruguay": {
-      "w": 0,
+      "w": 1,
       "d": 1,
       "l": 0
     },
@@ -268,6 +268,20 @@
     "mostGoalsConceded": null
   },
   "MATCHES": [
+    {
+      "a": "Belgium",
+      "sa": 0,
+      "b": "Iran",
+      "sb": 0,
+      "note": "Matchday 2"
+    },
+    {
+      "a": "Uruguay",
+      "sa": 2,
+      "b": "Cape Verde",
+      "sb": 1,
+      "note": "Matchday 2"
+    },
     {
       "a": "Spain",
       "sa": 4,
