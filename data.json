@@ -1,11 +1,11 @@
 {
-  "LAST_SYNC": "Mon 22 June, 18:05 UTC",
+  "LAST_SYNC": "Mon 22 June, 23:06 UTC",
   "STAGE": "Group stage — Matchday 2",
   "ELIMINATED": ["Tunisia"],
   "NEXT_MATCH": {
-    "label": "France 🇫🇷 vs 🇮🇶 Iraq",
-    "note": "Group stage · Matchday 2",
-    "kickoff": "2026-06-22T21:00:00Z"
+    "label": "Norway 🇳🇴 vs 🇸🇳 Senegal",
+    "note": "Group stage · Matchday 2 · MetLife Stadium",
+    "kickoff": "2026-06-23T00:00:00Z"
   },
   "BRACKET": {
     "Round of 32": [],
@@ -197,7 +197,7 @@
       "l": 1
     },
     "Argentina": {
-      "w": 1,
+      "w": 2,
       "d": 0,
       "l": 0
     },
@@ -209,7 +209,7 @@
     "Austria": {
       "w": 1,
       "d": 0,
-      "l": 0
+      "l": 1
     },
     "Jordan": {
       "w": 0,
@@ -237,14 +237,14 @@
       "l": 0
     },
     "Ghana": {
-      "w": 0,
-      "d": 1,
+      "w": 1,
+      "d": 0,
       "l": 0
     },
     "Panama": {
       "w": 0,
-      "d": 1,
-      "l": 0
+      "d": 0,
+      "l": 1
     },
     "Colombia": {
       "w": 1,
@@ -268,6 +268,13 @@
     "mostGoalsConceded": null
   },
   "MATCHES": [
+    {
+      "a": "Argentina",
+      "sa": 2,
+      "b": "Austria",
+      "sb": 0,
+      "note": "Matchday 2"
+    },
     {
       "a": "Egypt",
       "sa": 3,
@@ -389,7 +396,7 @@
     },
     {
       "a": "Ghana",
-      "sa": 0,
+      "sa": 1,
       "b": "Panama",
       "sb": 0,
       "note": "Matchday 1"
