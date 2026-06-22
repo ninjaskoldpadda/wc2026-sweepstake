@@ -1,11 +1,11 @@
 {
-  "LAST_SYNC": "Mon 22 June, 06:05 UTC",
+  "LAST_SYNC": "Mon 22 June, 18:05 UTC",
   "STAGE": "Group stage — Matchday 2",
   "ELIMINATED": ["Tunisia"],
   "NEXT_MATCH": {
-    "label": "Argentina 🇦🇷 vs 🇦🇹 Austria",
-    "note": "Group stage · Matchday 2 · AT&T Stadium, Arlington",
-    "kickoff": "2026-06-22T17:00:00Z"
+    "label": "France 🇫🇷 vs 🇮🇶 Iraq",
+    "note": "Group stage · Matchday 2",
+    "kickoff": "2026-06-22T21:00:00Z"
   },
   "BRACKET": {
     "Round of 32": [],
