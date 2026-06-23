@@ -1,11 +1,11 @@
 {
-  "LAST_SYNC": "Tue 23 June, 18:03 UTC",
+  "LAST_SYNC": "Tue 23 June, 23:05 UTC",
   "STAGE": "Group stage — Matchday 2",
   "ELIMINATED": ["Haiti", "Turkey", "Tunisia", "Jordan"],
   "NEXT_MATCH": {
-    "label": "England 🏴󠁧󠁢󠁥󠁮󠁧󠁿 vs 🇬🇭 Ghana",
-    "note": "Group stage · Matchday 2 · Gillette Stadium, Foxborough",
-    "kickoff": "2026-06-23T20:00:00Z"
+    "label": "Colombia 🇨🇴 vs 🇨🇩 DR Congo",
+    "note": "Group stage · Matchday 2 · Estadio Akron, Guadalajara",
+    "kickoff": "2026-06-24T02:00:00Z"
   },
   "BRACKET": {
     "Round of 32": [],
@@ -56,14 +56,14 @@
     "Algeria": { "w": 1, "d": 0, "l": 1 },
     "Austria": { "w": 1, "d": 0, "l": 1 },
     "Jordan": { "w": 0, "d": 0, "l": 2 },
-    "England": { "w": 1, "d": 0, "l": 0 },
+    "England": { "w": 1, "d": 1, "l": 0 },
     "Croatia": { "w": 0, "d": 0, "l": 1 },
-    "Portugal": { "w": 0, "d": 1, "l": 0 },
+    "Portugal": { "w": 1, "d": 1, "l": 0 },
     "DR Congo": { "w": 0, "d": 1, "l": 0 },
-    "Ghana": { "w": 1, "d": 0, "l": 0 },
+    "Ghana": { "w": 1, "d": 1, "l": 0 },
     "Panama": { "w": 0, "d": 0, "l": 1 },
     "Colombia": { "w": 1, "d": 0, "l": 0 },
-    "Uzbekistan": { "w": 0, "d": 0, "l": 1 }
+    "Uzbekistan": { "w": 0, "d": 0, "l": 2 }
   },
   "AWARDS": {
     "champion": null,
@@ -76,6 +76,8 @@
     "mostGoalsConceded": null
   },
   "MATCHES": [
+    { "a": "England", "sa": 0, "b": "Ghana", "sb": 0, "note": "Matchday 2" },
+    { "a": "Portugal", "sa": 5, "b": "Uzbekistan", "sb": 0, "note": "Matchday 2" },
     { "a": "Jordan", "sa": 1, "b": "Algeria", "sb": 2, "note": "Matchday 2" },
     { "a": "France", "sa": 3, "b": "Iraq", "sb": 0, "note": "Matchday 2" },
     { "a": "Norway", "sa": 3, "b": "Senegal", "sb": 2, "note": "Matchday 2" },
