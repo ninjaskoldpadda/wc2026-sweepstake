@@ -1,11 +1,11 @@
 {
-  "LAST_SYNC": "Tue 23 June, 06:04 UTC",
+  "LAST_SYNC": "Tue 23 June, 18:03 UTC",
   "STAGE": "Group stage — Matchday 2",
-  "ELIMINATED": ["Haiti", "Turkey", "Tunisia"],
+  "ELIMINATED": ["Haiti", "Turkey", "Tunisia", "Jordan"],
   "NEXT_MATCH": {
-    "label": "Portugal 🇵🇹 vs 🇺🇿 Uzbekistan",
-    "note": "Group stage · Matchday 2 · NRG Stadium, Houston",
-    "kickoff": "2026-06-23T17:00:00Z"
+    "label": "England 🏴󠁧󠁢󠁥󠁮󠁧󠁿 vs 🇬🇭 Ghana",
+    "note": "Group stage · Matchday 2 · Gillette Stadium, Foxborough",
+    "kickoff": "2026-06-23T20:00:00Z"
   },
   "BRACKET": {
     "Round of 32": [],
@@ -53,9 +53,9 @@
     "Norway": { "w": 2, "d": 0, "l": 0 },
     "Iraq": { "w": 0, "d": 0, "l": 2 },
     "Argentina": { "w": 2, "d": 0, "l": 0 },
-    "Algeria": { "w": 0, "d": 0, "l": 1 },
+    "Algeria": { "w": 1, "d": 0, "l": 1 },
     "Austria": { "w": 1, "d": 0, "l": 1 },
-    "Jordan": { "w": 0, "d": 0, "l": 1 },
+    "Jordan": { "w": 0, "d": 0, "l": 2 },
     "England": { "w": 1, "d": 0, "l": 0 },
     "Croatia": { "w": 0, "d": 0, "l": 1 },
     "Portugal": { "w": 0, "d": 1, "l": 0 },
@@ -76,6 +76,7 @@
     "mostGoalsConceded": null
   },
   "MATCHES": [
+    { "a": "Jordan", "sa": 1, "b": "Algeria", "sb": 2, "note": "Matchday 2" },
     { "a": "France", "sa": 3, "b": "Iraq", "sb": 0, "note": "Matchday 2" },
     { "a": "Norway", "sa": 3, "b": "Senegal", "sb": 2, "note": "Matchday 2" },
     { "a": "Argentina", "sa": 2, "b": "Austria", "sb": 0, "note": "Matchday 2" },
