@@ -1,14 +1,14 @@
 {
-  "LAST_SYNC": "Wed 24 June, 18:05 UTC",
+  "LAST_SYNC": "Wed 24 June, 23:05 UTC",
   "STAGE": "Group stage — Matchday 3",
-  "ELIMINATED": ["Haiti", "Turkey", "Tunisia", "Jordan", "Panama"],
+  "ELIMINATED": ["Haiti", "Turkey", "Tunisia", "Jordan", "Panama", "Qatar"],
   "NEXT_MATCH": {
-    "label": "Switzerland 🇨🇭 vs 🇨🇦 Canada",
-    "note": "Group stage · Matchday 3 · BC Place, Vancouver",
-    "kickoff": "2026-06-24T19:00:00Z"
+    "label": "Czechia 🇨🇿 vs 🇲🇽 Mexico",
+    "note": "Group stage · Matchday 3 · Estadio Azteca, Mexico City",
+    "kickoff": "2026-06-25T01:00:00Z"
   },
   "BRACKET": {
-    "Round of 32": [],
+    "Round of 32": ["Switzerland", "Canada"],
     "Round of 16": [],
     "Quarter-Finals": [],
     "Semi-Finals": [],
@@ -20,12 +20,12 @@
     "South Africa": { "w": 0, "d": 1, "l": 1 },
     "South Korea": { "w": 1, "d": 0, "l": 1 },
     "Czechia": { "w": 0, "d": 1, "l": 1 },
-    "Canada": { "w": 1, "d": 1, "l": 0 },
-    "Bosnia & Herzegovina": { "w": 0, "d": 1, "l": 1 },
+    "Canada": { "w": 1, "d": 1, "l": 1 },
+    "Bosnia & Herzegovina": { "w": 1, "d": 1, "l": 1 },
     "USA": { "w": 2, "d": 0, "l": 0 },
     "Paraguay": { "w": 1, "d": 0, "l": 1 },
-    "Qatar": { "w": 0, "d": 1, "l": 1 },
-    "Switzerland": { "w": 1, "d": 1, "l": 0 },
+    "Qatar": { "w": 0, "d": 1, "l": 2 },
+    "Switzerland": { "w": 2, "d": 1, "l": 0 },
     "Brazil": { "w": 1, "d": 1, "l": 0 },
     "Morocco": { "w": 1, "d": 1, "l": 0 },
     "Scotland": { "w": 1, "d": 0, "l": 1 },
@@ -76,6 +76,8 @@
     "mostGoalsConceded": null
   },
   "MATCHES": [
+    { "a": "Switzerland", "sa": 2, "b": "Canada", "sb": 1, "note": "Matchday 3" },
+    { "a": "Bosnia & Herzegovina", "sa": 3, "b": "Qatar", "sb": 1, "note": "Matchday 3" },
     { "a": "Colombia", "sa": 1, "b": "DR Congo", "sb": 0, "note": "Matchday 2" },
     { "a": "Croatia", "sa": 1, "b": "Panama", "sb": 0, "note": "Matchday 2" },
     { "a": "England", "sa": 0, "b": "Ghana", "sb": 0, "note": "Matchday 2" },
