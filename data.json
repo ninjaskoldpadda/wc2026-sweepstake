@@ -1,11 +1,11 @@
 {
-  "LAST_SYNC": "Tue 23 June, 23:05 UTC",
-  "STAGE": "Group stage — Matchday 2",
-  "ELIMINATED": ["Haiti", "Turkey", "Tunisia", "Jordan"],
+  "LAST_SYNC": "Wed 24 June, 06:05 UTC",
+  "STAGE": "Group stage — Matchday 3",
+  "ELIMINATED": ["Haiti", "Turkey", "Tunisia", "Jordan", "Panama"],
   "NEXT_MATCH": {
-    "label": "Colombia 🇨🇴 vs 🇨🇩 DR Congo",
-    "note": "Group stage · Matchday 2 · Estadio Akron, Guadalajara",
-    "kickoff": "2026-06-24T02:00:00Z"
+    "label": "Switzerland 🇨🇭 vs 🇨🇦 Canada",
+    "note": "Group stage · Matchday 3 · BC Place, Vancouver",
+    "kickoff": "2026-06-24T19:00:00Z"
   },
   "BRACKET": {
     "Round of 32": [],
@@ -57,12 +57,12 @@
     "Austria": { "w": 1, "d": 0, "l": 1 },
     "Jordan": { "w": 0, "d": 0, "l": 2 },
     "England": { "w": 1, "d": 1, "l": 0 },
-    "Croatia": { "w": 0, "d": 0, "l": 1 },
+    "Croatia": { "w": 1, "d": 0, "l": 1 },
     "Portugal": { "w": 1, "d": 1, "l": 0 },
-    "DR Congo": { "w": 0, "d": 1, "l": 0 },
+    "DR Congo": { "w": 0, "d": 1, "l": 1 },
     "Ghana": { "w": 1, "d": 1, "l": 0 },
-    "Panama": { "w": 0, "d": 0, "l": 1 },
-    "Colombia": { "w": 1, "d": 0, "l": 0 },
+    "Panama": { "w": 0, "d": 0, "l": 2 },
+    "Colombia": { "w": 2, "d": 0, "l": 0 },
     "Uzbekistan": { "w": 0, "d": 0, "l": 2 }
   },
   "AWARDS": {
@@ -76,6 +76,8 @@
     "mostGoalsConceded": null
   },
   "MATCHES": [
+    { "a": "Colombia", "sa": 1, "b": "DR Congo", "sb": 0, "note": "Matchday 2" },
+    { "a": "Croatia", "sa": 1, "b": "Panama", "sb": 0, "note": "Matchday 2" },
     { "a": "England", "sa": 0, "b": "Ghana", "sb": 0, "note": "Matchday 2" },
     { "a": "Portugal", "sa": 5, "b": "Uzbekistan", "sb": 0, "note": "Matchday 2" },
     { "a": "Jordan", "sa": 1, "b": "Algeria", "sb": 2, "note": "Matchday 2" },
