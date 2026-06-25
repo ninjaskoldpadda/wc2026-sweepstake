@@ -1,14 +1,14 @@
 {
-  "LAST_SYNC": "Thu 25 June, 18:05 UTC",
+  "LAST_SYNC": "Thu 25 June, 23:05 UTC",
   "STAGE": "Group stage — Matchday 3",
-  "ELIMINATED": ["Haiti", "Turkey", "Tunisia", "Jordan", "Czechia", "Qatar"],
+  "ELIMINATED": ["Haiti", "Turkey", "Tunisia", "Jordan", "Czechia", "Qatar", "Curaçao"],
   "NEXT_MATCH": {
-    "label": "Ecuador 🇪🇨 vs 🇩🇪 Germany",
-    "note": "Group stage · Matchday 3 · MetLife Stadium, New Jersey",
-    "kickoff": "2026-06-25T20:00:00Z"
+    "label": "Turkey 🇹🇷 vs 🇺🇸 USA",
+    "note": "Group stage · Matchday 3 · SoFi Stadium, Inglewood",
+    "kickoff": "2026-06-26T02:00:00Z"
   },
   "BRACKET": {
-    "Round of 32": ["Switzerland", "Canada", "Mexico", "South Africa", "Brazil", "Morocco"],
+    "Round of 32": ["Switzerland", "Canada", "Mexico", "South Africa", "Brazil", "Morocco", "Germany", "Ivory Coast"],
     "Round of 16": [],
     "Quarter-Finals": [],
     "Semi-Finals": [],
@@ -32,12 +32,12 @@
     "Haiti": { "w": 0, "d": 0, "l": 3 },
     "Australia": { "w": 1, "d": 0, "l": 1 },
     "Turkey": { "w": 0, "d": 0, "l": 2 },
-    "Germany": { "w": 2, "d": 0, "l": 0 },
-    "Curaçao": { "w": 0, "d": 1, "l": 1 },
+    "Germany": { "w": 2, "d": 0, "l": 1 },
+    "Curaçao": { "w": 0, "d": 1, "l": 2 },
     "Netherlands": { "w": 1, "d": 1, "l": 0 },
     "Japan": { "w": 1, "d": 1, "l": 0 },
-    "Ivory Coast": { "w": 1, "d": 0, "l": 1 },
-    "Ecuador": { "w": 0, "d": 1, "l": 1 },
+    "Ivory Coast": { "w": 2, "d": 0, "l": 1 },
+    "Ecuador": { "w": 1, "d": 1, "l": 1 },
     "Sweden": { "w": 1, "d": 0, "l": 1 },
     "Tunisia": { "w": 0, "d": 0, "l": 2 },
     "Spain": { "w": 1, "d": 1, "l": 0 },
@@ -76,11 +76,13 @@
     "mostGoalsConceded": null
   },
   "MATCHES": [
+    { "a": "Ecuador", "sa": 2, "b": "Germany", "sb": 1, "note": "Matchday 3" },
+    { "a": "Ivory Coast", "sa": 2, "b": "Curaçao", "sb": 0, "note": "Matchday 3" },
     { "a": "South Africa", "sa": 1, "b": "South Korea", "sb": 0, "note": "Matchday 3" },
     { "a": "Mexico", "sa": 3, "b": "Czechia", "sb": 0, "note": "Matchday 3" },
     { "a": "Scotland", "sa": 0, "b": "Brazil", "sb": 3, "note": "Matchday 3" },
     { "a": "Morocco", "sa": 4, "b": "Haiti", "sb": 2, "note": "Matchday 3" },
-    { "a": "Switzerland", "sa": 2, "b": "Canada", "sb": 1, "note": "Matchday 3" },
+    { "a": "Switzerland", "sa": 3, "b": "Canada", "sb": 1, "note": "Matchday 3" },
     { "a": "Bosnia & Herzegovina", "sa": 3, "b": "Qatar", "sb": 1, "note": "Matchday 3" },
     { "a": "Colombia", "sa": 1, "b": "DR Congo", "sb": 0, "note": "Matchday 2" },
     { "a": "Croatia", "sa": 1, "b": "Panama", "sb": 0, "note": "Matchday 2" },
