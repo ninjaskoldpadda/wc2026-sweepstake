@@ -1,14 +1,14 @@
 {
-  "LAST_SYNC": "Fri 26 June, 18:03 UTC",
+  "LAST_SYNC": "Fri 26 June, 23:03 UTC",
   "STAGE": "Group stage — Matchday 3",
-  "ELIMINATED": ["Haiti", "Turkey", "Tunisia", "Czechia", "Qatar", "Curaçao"],
+  "ELIMINATED": ["Haiti", "Turkey", "Tunisia", "Czechia", "Qatar", "Curaçao", "Jordan", "Panama"],
   "NEXT_MATCH": {
-    "label": "Norway 🇳🇴 vs 🇫🇷 France",
-    "note": "Group stage · Matchday 3 · Gillette Stadium, Foxborough",
-    "kickoff": "2026-06-26T19:00:00Z"
+    "label": "Spain 🇪🇸 vs 🇺🇾 Uruguay",
+    "note": "Group stage · Matchday 3 · Group H",
+    "kickoff": "2026-06-27T00:00:00Z"
   },
   "BRACKET": {
-    "Round of 32": ["Switzerland", "Canada", "Mexico", "South Africa", "Brazil", "Morocco", "Germany", "Ivory Coast", "USA", "Australia", "Netherlands", "Japan"],
+    "Round of 32": ["Switzerland", "Canada", "Mexico", "South Africa", "Brazil", "Morocco", "Germany", "Ivory Coast", "USA", "Australia", "Netherlands", "Japan", "France", "Norway"],
     "Round of 16": [],
     "Quarter-Finals": [],
     "Semi-Finals": [],
@@ -48,10 +48,10 @@
     "New Zealand": { "w": 0, "d": 1, "l": 1 },
     "Saudi Arabia": { "w": 0, "d": 1, "l": 1 },
     "Uruguay": { "w": 0, "d": 2, "l": 0 },
-    "France": { "w": 2, "d": 0, "l": 0 },
-    "Senegal": { "w": 0, "d": 0, "l": 2 },
-    "Norway": { "w": 2, "d": 0, "l": 0 },
-    "Iraq": { "w": 0, "d": 0, "l": 2 },
+    "France": { "w": 3, "d": 0, "l": 0 },
+    "Senegal": { "w": 1, "d": 0, "l": 2 },
+    "Norway": { "w": 2, "d": 0, "l": 1 },
+    "Iraq": { "w": 0, "d": 0, "l": 3 },
     "Argentina": { "w": 2, "d": 0, "l": 0 },
     "Algeria": { "w": 1, "d": 0, "l": 1 },
     "Austria": { "w": 1, "d": 0, "l": 1 },
@@ -76,6 +76,8 @@
     "mostGoalsConceded": null
   },
   "MATCHES": [
+    { "a": "Norway", "sa": 1, "b": "France", "sb": 4, "note": "Matchday 3" },
+    { "a": "Senegal", "sa": 5, "b": "Iraq", "sb": 0, "note": "Matchday 3" },
     { "a": "Turkey", "sa": 3, "b": "USA", "sb": 2, "note": "Matchday 3" },
     { "a": "Paraguay", "sa": 0, "b": "Australia", "sb": 0, "note": "Matchday 3" },
     { "a": "Netherlands", "sa": 3, "b": "Tunisia", "sb": 1, "note": "Matchday 3" },
