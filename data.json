@@ -1,5 +1,5 @@
 {
-  "LAST_SYNC": "Sun 28 June, 18:05 UTC",
+  "LAST_SYNC": "Sun 28 June, 23:04 UTC",
   "STAGE": "Round of 32",
   "ELIMINATED": [
     "Haiti",
@@ -17,12 +17,13 @@
     "Uzbekistan",
     "Iran",
     "South Korea",
-    "Scotland"
+    "Scotland",
+    "South Africa"
   ],
   "NEXT_MATCH": {
-    "label": "South Africa 🇿🇦 vs 🇨🇦 Canada",
-    "note": "Round of 32 · SoFi Stadium, Los Angeles",
-    "kickoff": "2026-06-28T19:00:00Z"
+    "label": "Brazil 🇧🇷 vs 🇯🇵 Japan",
+    "note": "Round of 32 · NRG Stadium, Houston",
+    "kickoff": "2026-06-29T17:00:00Z"
   },
   "BRACKET": {
     "Round of 32": [
@@ -59,7 +60,9 @@
       "Paraguay",
       "Senegal"
     ],
-    "Round of 16": [],
+    "Round of 16": [
+      "Canada"
+    ],
     "Quarter-Finals": [],
     "Semi-Finals": [],
     "Final": [],
@@ -74,7 +77,7 @@
     "South Africa": {
       "w": 1,
       "d": 1,
-      "l": 1
+      "l": 2
     },
     "South Korea": {
       "w": 1,
@@ -87,7 +90,7 @@
       "l": 2
     },
     "Canada": {
-      "w": 1,
+      "w": 2,
       "d": 1,
       "l": 1
     },
@@ -318,6 +321,13 @@
     "mostGoalsConceded": null
   },
   "MATCHES": [
+    {
+      "a": "South Africa",
+      "sa": 0,
+      "b": "Canada",
+      "sb": 1,
+      "note": "Round of 32"
+    },
     {
       "a": "Colombia",
       "sa": 0,
