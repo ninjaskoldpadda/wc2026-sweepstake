@@ -1,7 +1,9 @@
 {
-  "LAST_SYNC": "Mon 29 June, 23:05 UTC",
+  "LAST_SYNC": "Tue 30 June, 06:05 UTC",
   "STAGE": "Round of 32",
   "ELIMINATED": [
+    "Germany",
+    "Netherlands",
     "Haiti",
     "Turkey",
     "Tunisia",
@@ -22,9 +24,9 @@
     "Japan"
   ],
   "NEXT_MATCH": {
-    "label": "Netherlands 🇳🇱 vs 🇲🇦 Morocco",
-    "note": "Round of 32 · Estadio Monterrey, Monterrey",
-    "kickoff": "2026-06-30T01:00:00Z"
+    "label": "Ivory Coast 🇨🇮 vs 🇳🇴 Norway",
+    "note": "Round of 32 · AT&T Stadium, Arlington",
+    "kickoff": "2026-06-30T17:00:00Z"
   },
   "BRACKET": {
     "Round of 32": [
@@ -63,7 +65,9 @@
     ],
     "Round of 16": [
       "Canada",
-      "Brazil"
+      "Brazil",
+      "Paraguay",
+      "Morocco"
     ],
     "Quarter-Finals": [],
     "Semi-Finals": [],
@@ -107,7 +111,7 @@
       "l": 1
     },
     "Paraguay": {
-      "w": 1,
+      "w": 2,
       "d": 1,
       "l": 1
     },
@@ -127,7 +131,7 @@
       "l": 0
     },
     "Morocco": {
-      "w": 2,
+      "w": 3,
       "d": 1,
       "l": 0
     },
@@ -154,7 +158,7 @@
     "Germany": {
       "w": 2,
       "d": 0,
-      "l": 1
+      "l": 2
     },
     "Curaçao": {
       "w": 0,
@@ -164,7 +168,7 @@
     "Netherlands": {
       "w": 2,
       "d": 1,
-      "l": 0
+      "l": 1
     },
     "Japan": {
       "w": 1,
@@ -323,6 +327,20 @@
     "mostGoalsConceded": null
   },
   "MATCHES": [
+    {
+      "a": "Netherlands",
+      "sa": 1,
+      "b": "Morocco",
+      "sb": 1,
+      "note": "Round of 32 · Morocco win 3-2 on pens"
+    },
+    {
+      "a": "Germany",
+      "sa": 1,
+      "b": "Paraguay",
+      "sb": 1,
+      "note": "Round of 32 · Paraguay win 4-3 on pens"
+    },
     {
       "a": "Brazil",
       "sa": 2,
