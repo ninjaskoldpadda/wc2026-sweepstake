@@ -1,9 +1,11 @@
 {
-  "LAST_SYNC": "Tue 30 June, 18:05 UTC",
+  "LAST_SYNC": "Tue 30 June, 23:05 UTC",
   "STAGE": "Round of 32",
   "ELIMINATED": [
     "Germany",
     "Netherlands",
+    "Ivory Coast",
+    "Sweden",
     "Haiti",
     "Turkey",
     "Tunisia",
@@ -24,9 +26,9 @@
     "Japan"
   ],
   "NEXT_MATCH": {
-    "label": "France 🇫🇷 vs 🇸🇪 Sweden",
-    "note": "Round of 32 · MetLife Stadium, East Rutherford",
-    "kickoff": "2026-06-30T21:00:00Z"
+    "label": "Mexico 🇲🇽 vs 🇪🇨 Ecuador",
+    "note": "Round of 32 · Estadio Azteca, Mexico City",
+    "kickoff": "2026-07-01T01:00:00Z"
   },
   "BRACKET": {
     "Round of 32": [
@@ -67,7 +69,9 @@
       "Canada",
       "Brazil",
       "Paraguay",
-      "Morocco"
+      "Morocco",
+      "Norway",
+      "France"
     ],
     "Quarter-Finals": [],
     "Semi-Finals": [],
@@ -178,7 +182,7 @@
     "Ivory Coast": {
       "w": 2,
       "d": 0,
-      "l": 1
+      "l": 2
     },
     "Ecuador": {
       "w": 1,
@@ -188,7 +192,7 @@
     "Sweden": {
       "w": 1,
       "d": 1,
-      "l": 1
+      "l": 2
     },
     "Tunisia": {
       "w": 0,
@@ -236,7 +240,7 @@
       "l": 1
     },
     "France": {
-      "w": 3,
+      "w": 4,
       "d": 0,
       "l": 0
     },
@@ -246,7 +250,7 @@
       "l": 2
     },
     "Norway": {
-      "w": 2,
+      "w": 3,
       "d": 0,
       "l": 1
     },
@@ -327,6 +331,20 @@
     "mostGoalsConceded": null
   },
   "MATCHES": [
+    {
+      "a": "France",
+      "sa": 3,
+      "b": "Sweden",
+      "sb": 0,
+      "note": "Round of 32"
+    },
+    {
+      "a": "Ivory Coast",
+      "sa": 1,
+      "b": "Norway",
+      "sb": 2,
+      "note": "Round of 32"
+    },
     {
       "a": "Netherlands",
       "sa": 1,
