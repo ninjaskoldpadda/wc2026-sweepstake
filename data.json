@@ -1,5 +1,5 @@
 {
-  "LAST_SYNC": "Tue 30 June, 23:05 UTC",
+  "LAST_SYNC": "Wed 01 July, 06:04 UTC",
   "STAGE": "Round of 32",
   "ELIMINATED": [
     "Germany",
@@ -23,12 +23,13 @@
     "South Korea",
     "Scotland",
     "South Africa",
-    "Japan"
+    "Japan",
+    "Ecuador"
   ],
   "NEXT_MATCH": {
-    "label": "Mexico 🇲🇽 vs 🇪🇨 Ecuador",
-    "note": "Round of 32 · Estadio Azteca, Mexico City",
-    "kickoff": "2026-07-01T01:00:00Z"
+    "label": "England 🏴󠁧󠁢󠁥󠁮󠁧󠁿 vs 🇨🇩 DR Congo",
+    "note": "Round of 32 · Mercedes-Benz Stadium, Atlanta",
+    "kickoff": "2026-07-01T16:00:00Z"
   },
   "BRACKET": {
     "Round of 32": [
@@ -71,7 +72,8 @@
       "Paraguay",
       "Morocco",
       "Norway",
-      "France"
+      "France",
+      "Mexico"
     ],
     "Quarter-Finals": [],
     "Semi-Finals": [],
@@ -80,7 +82,7 @@
   },
   "RESULTS": {
     "Mexico": {
-      "w": 3,
+      "w": 4,
       "d": 0,
       "l": 0
     },
@@ -187,7 +189,7 @@
     "Ecuador": {
       "w": 1,
       "d": 1,
-      "l": 1
+      "l": 2
     },
     "Sweden": {
       "w": 1,
@@ -331,6 +333,13 @@
     "mostGoalsConceded": null
   },
   "MATCHES": [
+    {
+      "a": "Mexico",
+      "sa": 2,
+      "b": "Ecuador",
+      "sb": 0,
+      "note": "Round of 32"
+    },
     {
       "a": "France",
       "sa": 3,
