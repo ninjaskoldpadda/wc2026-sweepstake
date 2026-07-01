@@ -1,5 +1,5 @@
 {
-  "LAST_SYNC": "Wed 01 July, 18:05 UTC",
+  "LAST_SYNC": "Wed 01 July, 23:10 UTC",
   "STAGE": "Round of 32",
   "ELIMINATED": [
     "Germany",
@@ -25,12 +25,13 @@
     "South Africa",
     "Japan",
     "Ecuador",
-    "DR Congo"
+    "DR Congo",
+    "Senegal"
   ],
   "NEXT_MATCH": {
-    "label": "Belgium 🇧🇪 vs 🇸🇳 Senegal",
-    "note": "Round of 32 · Lumen Field, Seattle",
-    "kickoff": "2026-07-01T20:00:00Z"
+    "label": "USA 🇺🇸 vs 🇧🇦 Bosnia and Herzegovina",
+    "note": "Round of 32 · Levi's Stadium, Santa Clara",
+    "kickoff": "2026-07-02T00:00:00Z"
   },
   "BRACKET": {
     "Round of 32": [
@@ -75,7 +76,8 @@
       "Norway",
       "France",
       "Mexico",
-      "England"
+      "England",
+      "Belgium"
     ],
     "Quarter-Finals": [],
     "Semi-Finals": [],
@@ -214,7 +216,7 @@
       "l": 0
     },
     "Belgium": {
-      "w": 1,
+      "w": 2,
       "d": 2,
       "l": 0
     },
@@ -251,7 +253,7 @@
     "Senegal": {
       "w": 1,
       "d": 0,
-      "l": 2
+      "l": 3
     },
     "Norway": {
       "w": 3,
@@ -335,6 +337,13 @@
     "mostGoalsConceded": null
   },
   "MATCHES": [
+    {
+      "a": "Belgium",
+      "sa": 3,
+      "b": "Senegal",
+      "sb": 2,
+      "note": "Round of 32 · Belgium win in extra time"
+    },
     {
       "a": "England",
       "sa": 2,
