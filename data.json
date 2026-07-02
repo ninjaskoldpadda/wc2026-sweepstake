@@ -1,7 +1,8 @@
 {
-  "LAST_SYNC": "Thu 02 July, 06:10 UTC",
+  "LAST_SYNC": "Thu 02 July, 23:05 UTC",
   "STAGE": "Round of 32",
   "ELIMINATED": [
+    "Austria",
     "Germany",
     "Netherlands",
     "Ivory Coast",
@@ -30,9 +31,9 @@
     "Bosnia & Herzegovina"
   ],
   "NEXT_MATCH": {
-    "label": "Spain 🇪🇸 vs 🇦🇹 Austria",
-    "note": "Round of 32 · SoFi Stadium, Los Angeles",
-    "kickoff": "2026-07-02T19:00:00Z"
+    "label": "Switzerland 🇨🇭 vs 🇩🇿 Algeria",
+    "note": "Round of 32 · BC Place, Vancouver",
+    "kickoff": "2026-07-03T03:00:00Z"
   },
   "BRACKET": {
     "Round of 32": [
@@ -79,7 +80,8 @@
       "Mexico",
       "England",
       "Belgium",
-      "USA"
+      "USA",
+      "Spain"
     ],
     "Quarter-Finals": [],
     "Semi-Finals": [],
@@ -208,7 +210,7 @@
       "l": 3
     },
     "Spain": {
-      "w": 2,
+      "w": 3,
       "d": 1,
       "l": 0
     },
@@ -280,7 +282,7 @@
     "Austria": {
       "w": 1,
       "d": 1,
-      "l": 1
+      "l": 2
     },
     "Jordan": {
       "w": 0,
@@ -339,6 +341,13 @@
     "mostGoalsConceded": null
   },
   "MATCHES": [
+    {
+      "a": "Spain",
+      "sa": 3,
+      "b": "Austria",
+      "sb": 0,
+      "note": "Round of 32"
+    },
     {
       "a": "USA",
       "sa": 2,
