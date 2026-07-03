@@ -1,7 +1,9 @@
 {
-  "LAST_SYNC": "Thu 02 July, 23:05 UTC",
+  "LAST_SYNC": "Fri 03 July, 06:04 UTC",
   "STAGE": "Round of 32",
   "ELIMINATED": [
+    "Croatia",
+    "Algeria",
     "Austria",
     "Germany",
     "Netherlands",
@@ -31,9 +33,9 @@
     "Bosnia & Herzegovina"
   ],
   "NEXT_MATCH": {
-    "label": "Switzerland 🇨🇭 vs 🇩🇿 Algeria",
-    "note": "Round of 32 · BC Place, Vancouver",
-    "kickoff": "2026-07-03T03:00:00Z"
+    "label": "Australia 🇦🇺 vs 🇪🇬 Egypt",
+    "note": "Round of 32 · AT&T Stadium, Arlington",
+    "kickoff": "2026-07-03T19:00:00Z"
   },
   "BRACKET": {
     "Round of 32": [
@@ -81,7 +83,9 @@
       "England",
       "Belgium",
       "USA",
-      "Spain"
+      "Spain",
+      "Portugal",
+      "Switzerland"
     ],
     "Quarter-Finals": [],
     "Semi-Finals": [],
@@ -135,7 +139,7 @@
       "l": 2
     },
     "Switzerland": {
-      "w": 2,
+      "w": 3,
       "d": 1,
       "l": 0
     },
@@ -277,7 +281,7 @@
     "Algeria": {
       "w": 1,
       "d": 1,
-      "l": 1
+      "l": 2
     },
     "Austria": {
       "w": 1,
@@ -297,10 +301,10 @@
     "Croatia": {
       "w": 2,
       "d": 0,
-      "l": 1
+      "l": 2
     },
     "Portugal": {
-      "w": 1,
+      "w": 2,
       "d": 2,
       "l": 0
     },
@@ -341,6 +345,20 @@
     "mostGoalsConceded": null
   },
   "MATCHES": [
+    {
+      "a": "Switzerland",
+      "sa": 2,
+      "b": "Algeria",
+      "sb": 0,
+      "note": "Round of 32"
+    },
+    {
+      "a": "Portugal",
+      "sa": 2,
+      "b": "Croatia",
+      "sb": 1,
+      "note": "Round of 32 · Ramos stoppage-time winner"
+    },
     {
       "a": "Spain",
       "sa": 3,
