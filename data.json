@@ -1,7 +1,9 @@
 {
-  "LAST_SYNC": "Fri 03 July, 23:05 UTC",
-  "STAGE": "Round of 32",
+  "LAST_SYNC": "Sat 04 July, 06:04 UTC",
+  "STAGE": "Round of 16",
   "ELIMINATED": [
+    "Cape Verde",
+    "Ghana",
     "Australia",
     "Croatia",
     "Algeria",
@@ -34,9 +36,9 @@
     "Bosnia & Herzegovina"
   ],
   "NEXT_MATCH": {
-    "label": "Colombia 🇨🇴 vs 🇬🇭 Ghana",
-    "note": "Round of 32 · Kansas City Stadium",
-    "kickoff": "2026-07-04T00:30:00Z"
+    "label": "Canada 🇨🇦 vs 🇲🇦 Morocco",
+    "note": "Round of 16 · Houston Stadium",
+    "kickoff": "2026-07-04T17:00:00Z"
   },
   "BRACKET": {
     "Round of 32": [
@@ -87,7 +89,9 @@
       "Spain",
       "Portugal",
       "Switzerland",
-      "Egypt"
+      "Egypt",
+      "Colombia",
+      "Argentina"
     ],
     "Quarter-Finals": [],
     "Semi-Finals": [],
@@ -223,7 +227,7 @@
     "Cape Verde": {
       "w": 0,
       "d": 3,
-      "l": 0
+      "l": 1
     },
     "Belgium": {
       "w": 2,
@@ -276,7 +280,7 @@
       "l": 3
     },
     "Argentina": {
-      "w": 3,
+      "w": 4,
       "d": 0,
       "l": 0
     },
@@ -318,7 +322,7 @@
     "Ghana": {
       "w": 1,
       "d": 1,
-      "l": 1
+      "l": 2
     },
     "Panama": {
       "w": 0,
@@ -326,7 +330,7 @@
       "l": 3
     },
     "Colombia": {
-      "w": 2,
+      "w": 3,
       "d": 1,
       "l": 0
     },
@@ -347,6 +351,20 @@
     "mostGoalsConceded": null
   },
   "MATCHES": [
+    {
+      "a": "Colombia",
+      "sa": 1,
+      "b": "Ghana",
+      "sb": 0,
+      "note": "Round of 32"
+    },
+    {
+      "a": "Argentina",
+      "sa": 3,
+      "b": "Cape Verde",
+      "sb": 2,
+      "note": "Round of 32 · Argentina win after extra time"
+    },
     {
       "a": "Australia",
       "sa": 1,
