@@ -1,5 +1,5 @@
 {
-  "LAST_SYNC": "Sat 04 July, 18:04 UTC",
+  "LAST_SYNC": "Sat 04 July, 23:04 UTC",
   "STAGE": "Round of 16",
   "ELIMINATED": [
     "Cape Verde",
@@ -33,12 +33,14 @@
     "Ecuador",
     "DR Congo",
     "Senegal",
-    "Bosnia & Herzegovina"
+    "Bosnia & Herzegovina",
+    "Canada",
+    "Paraguay"
   ],
   "NEXT_MATCH": {
-    "label": "Paraguay 🇵🇾 vs 🇫🇷 France",
-    "note": "Round of 16 · Philadelphia Stadium",
-    "kickoff": "2026-07-04T21:00:00Z"
+    "label": "Brazil 🇧🇷 vs 🇳🇴 Norway",
+    "note": "Round of 16 · MetLife Stadium",
+    "kickoff": "2026-07-05T20:00:00Z"
   },
   "BRACKET": {
     "Round of 32": [
@@ -93,7 +95,10 @@
       "Colombia",
       "Argentina"
     ],
-    "Quarter-Finals": [],
+    "Quarter-Finals": [
+      "Morocco",
+      "France"
+    ],
     "Semi-Finals": [],
     "Final": [],
     "Champion": []
@@ -122,7 +127,7 @@
     "Canada": {
       "w": 2,
       "d": 1,
-      "l": 1
+      "l": 2
     },
     "Bosnia & Herzegovina": {
       "w": 1,
@@ -137,7 +142,7 @@
     "Paraguay": {
       "w": 2,
       "d": 1,
-      "l": 1
+      "l": 2
     },
     "Qatar": {
       "w": 0,
@@ -155,7 +160,7 @@
       "l": 0
     },
     "Morocco": {
-      "w": 3,
+      "w": 4,
       "d": 1,
       "l": 0
     },
@@ -260,7 +265,7 @@
       "l": 1
     },
     "France": {
-      "w": 4,
+      "w": 5,
       "d": 0,
       "l": 0
     },
@@ -351,6 +356,20 @@
     "mostGoalsConceded": null
   },
   "MATCHES": [
+    {
+      "a": "France",
+      "sa": 1,
+      "b": "Paraguay",
+      "sb": 0,
+      "note": "Round of 16 · Mbappé penalty winner"
+    },
+    {
+      "a": "Morocco",
+      "sa": 3,
+      "b": "Canada",
+      "sb": 0,
+      "note": "Round of 16 · hosts eliminated"
+    },
     {
       "a": "Colombia",
       "sa": 1,
