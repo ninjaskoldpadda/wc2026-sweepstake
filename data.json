@@ -1,5 +1,5 @@
 {
-  "LAST_SYNC": "Sun 05 July, 18:04 UTC",
+  "LAST_SYNC": "Sun 05 July, 23:05 UTC",
   "STAGE": "Round of 16",
   "ELIMINATED": [
     "Cape Verde",
@@ -35,12 +35,13 @@
     "Senegal",
     "Bosnia & Herzegovina",
     "Canada",
-    "Paraguay"
+    "Paraguay",
+    "Brazil"
   ],
   "NEXT_MATCH": {
-    "label": "Brazil 🇧🇷 vs 🇳🇴 Norway",
-    "note": "Round of 16 · MetLife Stadium",
-    "kickoff": "2026-07-05T20:00:00Z"
+    "label": "Mexico 🇲🇽 vs 🏴󠁧󠁢󠁥󠁮󠁧󠁿 England",
+    "note": "Round of 16 · Estadio Azteca",
+    "kickoff": "2026-07-06T00:00:00Z"
   },
   "BRACKET": {
     "Round of 32": [
@@ -97,7 +98,8 @@
     ],
     "Quarter-Finals": [
       "Morocco",
-      "France"
+      "France",
+      "Norway"
     ],
     "Semi-Finals": [],
     "Final": [],
@@ -157,7 +159,7 @@
     "Brazil": {
       "w": 3,
       "d": 1,
-      "l": 0
+      "l": 1
     },
     "Morocco": {
       "w": 4,
@@ -275,7 +277,7 @@
       "l": 3
     },
     "Norway": {
-      "w": 3,
+      "w": 4,
       "d": 0,
       "l": 1
     },
@@ -356,6 +358,13 @@
     "mostGoalsConceded": null
   },
   "MATCHES": [
+    {
+      "a": "Brazil",
+      "sa": 1,
+      "b": "Norway",
+      "sb": 2,
+      "note": "Round of 16 · Haaland brace sends Brazil home"
+    },
     {
       "a": "France",
       "sa": 1,
