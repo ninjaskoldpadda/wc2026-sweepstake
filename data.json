@@ -1,5 +1,5 @@
 {
-  "LAST_SYNC": "Sun 05 July, 23:05 UTC",
+  "LAST_SYNC": "Mon 06 July, 06:05 UTC",
   "STAGE": "Round of 16",
   "ELIMINATED": [
     "Cape Verde",
@@ -36,12 +36,13 @@
     "Bosnia & Herzegovina",
     "Canada",
     "Paraguay",
-    "Brazil"
+    "Brazil",
+    "Mexico"
   ],
   "NEXT_MATCH": {
-    "label": "Mexico 🇲🇽 vs 🏴󠁧󠁢󠁥󠁮󠁧󠁿 England",
-    "note": "Round of 16 · Estadio Azteca",
-    "kickoff": "2026-07-06T00:00:00Z"
+    "label": "Portugal 🇵🇹 vs 🇪🇸 Spain",
+    "note": "Round of 16 · AT&T Stadium, Arlington",
+    "kickoff": "2026-07-06T19:00:00Z"
   },
   "BRACKET": {
     "Round of 32": [
@@ -99,7 +100,8 @@
     "Quarter-Finals": [
       "Morocco",
       "France",
-      "Norway"
+      "Norway",
+      "England"
     ],
     "Semi-Finals": [],
     "Final": [],
@@ -109,7 +111,7 @@
     "Mexico": {
       "w": 4,
       "d": 0,
-      "l": 0
+      "l": 1
     },
     "South Africa": {
       "w": 1,
@@ -307,7 +309,7 @@
       "l": 3
     },
     "England": {
-      "w": 3,
+      "w": 4,
       "d": 1,
       "l": 0
     },
@@ -358,6 +360,13 @@
     "mostGoalsConceded": null
   },
   "MATCHES": [
+    {
+      "a": "Mexico",
+      "sa": 2,
+      "b": "England",
+      "sb": 3,
+      "note": "Round of 16 · Bellingham brace, 10-man England hold on at the Azteca"
+    },
     {
       "a": "Brazil",
       "sa": 1,
