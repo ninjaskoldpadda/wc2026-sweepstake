@@ -1,7 +1,8 @@
 {
-  "LAST_SYNC": "Tue 07 July, 06:02 UTC",
+  "LAST_SYNC": "Tue 07 July, 18:10 UTC",
   "STAGE": "Round of 16",
   "ELIMINATED": [
+    "Egypt",
     "USA",
     "Portugal",
     "Cape Verde",
@@ -42,9 +43,9 @@
     "Mexico"
   ],
   "NEXT_MATCH": {
-    "label": "Argentina 🇦🇷 vs 🇪🇬 Egypt",
-    "note": "Round of 16 · Mercedes-Benz Stadium, Atlanta",
-    "kickoff": "2026-07-07T16:00:00Z"
+    "label": "Switzerland 🇨🇭 vs 🇨🇴 Colombia",
+    "note": "Round of 16 · BC Place, Vancouver",
+    "kickoff": "2026-07-07T20:00:00Z"
   },
   "BRACKET": {
     "Round of 32": [
@@ -105,7 +106,8 @@
       "Norway",
       "England",
       "Spain",
-      "Belgium"
+      "Belgium",
+      "Argentina"
     ],
     "Semi-Finals": [],
     "Final": [],
@@ -250,7 +252,7 @@
     "Egypt": {
       "w": 2,
       "d": 2,
-      "l": 0
+      "l": 1
     },
     "Iran": {
       "w": 0,
@@ -293,7 +295,7 @@
       "l": 3
     },
     "Argentina": {
-      "w": 4,
+      "w": 5,
       "d": 0,
       "l": 0
     },
@@ -364,6 +366,13 @@
     "mostGoalsConceded": null
   },
   "MATCHES": [
+    {
+      "a": "Argentina",
+      "sa": 3,
+      "b": "Egypt",
+      "sb": 2,
+      "note": "Round of 16 · Argentina complete comeback from 2-0 down; Fernández 90+2 winner"
+    },
     {
       "a": "USA",
       "sa": 1,
