@@ -1,7 +1,8 @@
 {
-  "LAST_SYNC": "Mon 06 July, 23:05 UTC",
+  "LAST_SYNC": "Tue 07 July, 06:02 UTC",
   "STAGE": "Round of 16",
   "ELIMINATED": [
+    "USA",
     "Portugal",
     "Cape Verde",
     "Ghana",
@@ -41,9 +42,9 @@
     "Mexico"
   ],
   "NEXT_MATCH": {
-    "label": "USA 🇺🇸 vs 🇧🇪 Belgium",
-    "note": "Round of 16 · Lumen Field, Seattle",
-    "kickoff": "2026-07-07T00:00:00Z"
+    "label": "Argentina 🇦🇷 vs 🇪🇬 Egypt",
+    "note": "Round of 16 · Mercedes-Benz Stadium, Atlanta",
+    "kickoff": "2026-07-07T16:00:00Z"
   },
   "BRACKET": {
     "Round of 32": [
@@ -103,7 +104,8 @@
       "France",
       "Norway",
       "England",
-      "Spain"
+      "Spain",
+      "Belgium"
     ],
     "Semi-Finals": [],
     "Final": [],
@@ -143,7 +145,7 @@
     "USA": {
       "w": 3,
       "d": 0,
-      "l": 1
+      "l": 2
     },
     "Paraguay": {
       "w": 2,
@@ -241,7 +243,7 @@
       "l": 1
     },
     "Belgium": {
-      "w": 2,
+      "w": 3,
       "d": 2,
       "l": 0
     },
@@ -362,6 +364,13 @@
     "mostGoalsConceded": null
   },
   "MATCHES": [
+    {
+      "a": "USA",
+      "sa": 1,
+      "b": "Belgium",
+      "sb": 4,
+      "note": "Round of 16 · De Ketelaere brace sends USA out"
+    },
     {
       "a": "Portugal",
       "sa": 0,
