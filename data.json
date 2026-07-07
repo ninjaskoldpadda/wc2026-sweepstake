@@ -1,6 +1,6 @@
 {
-  "LAST_SYNC": "Tue 07 July, 18:10 UTC",
-  "STAGE": "Round of 16",
+  "LAST_SYNC": "Tue 07 July, 23:05 UTC",
+  "STAGE": "Quarter-Finals",
   "ELIMINATED": [
     "Egypt",
     "USA",
@@ -40,12 +40,13 @@
     "Canada",
     "Paraguay",
     "Brazil",
-    "Mexico"
+    "Mexico",
+    "Colombia"
   ],
   "NEXT_MATCH": {
-    "label": "Switzerland 🇨🇭 vs 🇨🇴 Colombia",
-    "note": "Round of 16 · BC Place, Vancouver",
-    "kickoff": "2026-07-07T20:00:00Z"
+    "label": "France 🇫🇷 vs 🇲🇦 Morocco",
+    "note": "Quarter-Final · Gillette Stadium, Boston",
+    "kickoff": "2026-07-09T20:00:00Z"
   },
   "BRACKET": {
     "Round of 32": [
@@ -107,7 +108,8 @@
       "England",
       "Spain",
       "Belgium",
-      "Argentina"
+      "Argentina",
+      "Switzerland"
     ],
     "Semi-Finals": [],
     "Final": [],
@@ -160,7 +162,7 @@
       "l": 2
     },
     "Switzerland": {
-      "w": 3,
+      "w": 4,
       "d": 1,
       "l": 0
     },
@@ -347,7 +349,7 @@
     "Colombia": {
       "w": 3,
       "d": 1,
-      "l": 0
+      "l": 1
     },
     "Uzbekistan": {
       "w": 0,
@@ -366,6 +368,13 @@
     "mostGoalsConceded": null
   },
   "MATCHES": [
+    {
+      "a": "Switzerland",
+      "sa": 0,
+      "b": "Colombia",
+      "sb": 0,
+      "note": "Round of 16 · Switzerland win 4-3 on pens — first QF since 1954"
+    },
     {
       "a": "Argentina",
       "sa": 3,
