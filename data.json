@@ -1,5 +1,5 @@
 {
-  "LAST_SYNC": "Thu 09 July, 18:00 UTC",
+  "LAST_SYNC": "Thu 09 July, 23:00 UTC",
   "STAGE": "Quarter-Finals",
   "ELIMINATED": [
     "Egypt",
@@ -41,12 +41,13 @@
     "Paraguay",
     "Brazil",
     "Mexico",
-    "Colombia"
+    "Colombia",
+    "Morocco"
   ],
   "NEXT_MATCH": {
-    "label": "France 🇫🇷 vs 🇲🇦 Morocco",
-    "note": "Quarter-Final · Gillette Stadium, Boston",
-    "kickoff": "2026-07-09T20:00:00Z"
+    "label": "Spain 🇪🇸 vs 🇧🇪 Belgium",
+    "note": "Quarter-Final · Los Angeles Stadium",
+    "kickoff": "2026-07-10T19:00:00Z"
   },
   "BRACKET": {
     "Round of 32": [
@@ -111,7 +112,9 @@
       "Argentina",
       "Switzerland"
     ],
-    "Semi-Finals": [],
+    "Semi-Finals": [
+      "France"
+    ],
     "Final": [],
     "Champion": []
   },
@@ -174,7 +177,7 @@
     "Morocco": {
       "w": 4,
       "d": 1,
-      "l": 0
+      "l": 1
     },
     "Scotland": {
       "w": 1,
@@ -277,7 +280,7 @@
       "l": 1
     },
     "France": {
-      "w": 5,
+      "w": 6,
       "d": 0,
       "l": 0
     },
@@ -368,6 +371,13 @@
     "mostGoalsConceded": null
   },
   "MATCHES": [
+    {
+      "a": "France",
+      "sa": 2,
+      "b": "Morocco",
+      "sb": 0,
+      "note": "Quarter-Final · Mbappé & Dembélé send France to a third straight semi"
+    },
     {
       "a": "Switzerland",
       "sa": 0,
