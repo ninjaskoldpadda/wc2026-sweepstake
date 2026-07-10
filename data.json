@@ -1,5 +1,5 @@
 {
-  "LAST_SYNC": "Fri 10 July, 18:00 UTC",
+  "LAST_SYNC": "Fri 10 July, 23:00 UTC",
   "STAGE": "Quarter-Finals",
   "ELIMINATED": [
     "Egypt",
@@ -42,12 +42,13 @@
     "Brazil",
     "Mexico",
     "Colombia",
-    "Morocco"
+    "Morocco",
+    "Belgium"
   ],
   "NEXT_MATCH": {
-    "label": "Spain 🇪🇸 vs 🇧🇪 Belgium",
-    "note": "Quarter-Final · Los Angeles Stadium",
-    "kickoff": "2026-07-10T19:00:00Z"
+    "label": "Norway 🇳🇴 vs 🏴󠁧󠁢󠁥󠁮󠁧󠁿 England",
+    "note": "Quarter-Final · Hard Rock Stadium, Miami",
+    "kickoff": "2026-07-11T21:00:00Z"
   },
   "BRACKET": {
     "Round of 32": [
@@ -113,7 +114,8 @@
       "Switzerland"
     ],
     "Semi-Finals": [
-      "France"
+      "France",
+      "Spain"
     ],
     "Final": [],
     "Champion": []
@@ -240,7 +242,7 @@
       "l": 3
     },
     "Spain": {
-      "w": 4,
+      "w": 5,
       "d": 1,
       "l": 0
     },
@@ -252,7 +254,7 @@
     "Belgium": {
       "w": 3,
       "d": 2,
-      "l": 0
+      "l": 1
     },
     "Egypt": {
       "w": 2,
@@ -371,6 +373,13 @@
     "mostGoalsConceded": null
   },
   "MATCHES": [
+    {
+      "a": "Spain",
+      "sa": 2,
+      "b": "Belgium",
+      "sb": 1,
+      "note": "Quarter-Final · Merino off the bench wins it in the 80th; Spain meet France in the semi"
+    },
     {
       "a": "France",
       "sa": 2,
