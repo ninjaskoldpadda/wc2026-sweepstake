@@ -1,6 +1,6 @@
 {
-  "LAST_SYNC": "Sat 11 July, 18:00 UTC",
-  "STAGE": "Quarter-Finals",
+  "LAST_SYNC": "Sun 12 July, 18:04 UTC",
+  "STAGE": "Semi-Finals",
   "ELIMINATED": [
     "Egypt",
     "USA",
@@ -43,12 +43,14 @@
     "Mexico",
     "Colombia",
     "Morocco",
-    "Belgium"
+    "Belgium",
+    "Switzerland",
+    "Norway"
   ],
   "NEXT_MATCH": {
-    "label": "Norway 🇳🇴 vs 🏴󠁧󠁢󠁥󠁮󠁧󠁿 England",
-    "note": "Quarter-Final · Hard Rock Stadium, Miami",
-    "kickoff": "2026-07-11T21:00:00Z"
+    "label": "France 🇫🇷 vs 🇪🇸 Spain",
+    "note": "Semi-Final · Dallas Stadium (AT&T), Arlington",
+    "kickoff": "2026-07-14T19:00:00Z"
   },
   "BRACKET": {
     "Round of 32": [
@@ -115,7 +117,9 @@
     ],
     "Semi-Finals": [
       "France",
-      "Spain"
+      "Spain",
+      "England",
+      "Argentina"
     ],
     "Final": [],
     "Champion": []
@@ -169,7 +173,7 @@
     "Switzerland": {
       "w": 4,
       "d": 1,
-      "l": 0
+      "l": 1
     },
     "Brazil": {
       "w": 3,
@@ -294,7 +298,7 @@
     "Norway": {
       "w": 4,
       "d": 0,
-      "l": 1
+      "l": 2
     },
     "Iraq": {
       "w": 0,
@@ -302,7 +306,7 @@
       "l": 3
     },
     "Argentina": {
-      "w": 5,
+      "w": 6,
       "d": 0,
       "l": 0
     },
@@ -322,7 +326,7 @@
       "l": 3
     },
     "England": {
-      "w": 4,
+      "w": 5,
       "d": 1,
       "l": 0
     },
@@ -373,6 +377,20 @@
     "mostGoalsConceded": null
   },
   "MATCHES": [
+    {
+      "a": "Argentina",
+      "sa": 3,
+      "b": "Switzerland",
+      "sb": 1,
+      "note": "Quarter-Final · Álvarez golazo in extra time downs 10-man Switzerland; Argentina face England in Atlanta"
+    },
+    {
+      "a": "England",
+      "sa": 2,
+      "b": "Norway",
+      "sb": 1,
+      "note": "Quarter-Final · Bellingham brace, extra-time winner sinks Haaland's Norway"
+    },
     {
       "a": "Spain",
       "sa": 2,
