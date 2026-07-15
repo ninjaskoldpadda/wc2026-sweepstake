@@ -1,6 +1,6 @@
 {
-  "LAST_SYNC": "Wed 15 July, 18:05 UTC",
-  "STAGE": "Semi-Finals",
+  "LAST_SYNC": "Wed 15 July, 23:04 UTC",
+  "STAGE": "Final — Spain vs Argentina",
   "ELIMINATED": [
     "France",
     "Egypt",
@@ -46,12 +46,13 @@
     "Morocco",
     "Belgium",
     "Switzerland",
-    "Norway"
+    "Norway",
+    "England"
   ],
   "NEXT_MATCH": {
-    "label": "England 🏴󠁧󠁢󠁥󠁮󠁧󠁿 vs 🇦🇷 Argentina",
-    "note": "Semi-Final · Atlanta Stadium (Mercedes-Benz)",
-    "kickoff": "2026-07-15T19:00:00Z"
+    "label": "France 🇫🇷 vs 🏴󠁧󠁢󠁥󠁮󠁧󠁿 England",
+    "note": "Third-place play-off · Hard Rock Stadium, Miami",
+    "kickoff": "2026-07-18T21:00:00Z"
   },
   "BRACKET": {
     "Round of 32": [
@@ -123,7 +124,8 @@
       "Argentina"
     ],
     "Final": [
-      "Spain"
+      "Spain",
+      "Argentina"
     ],
     "Champion": []
   },
@@ -309,7 +311,7 @@
       "l": 3
     },
     "Argentina": {
-      "w": 6,
+      "w": 7,
       "d": 0,
       "l": 0
     },
@@ -331,7 +333,7 @@
     "England": {
       "w": 5,
       "d": 1,
-      "l": 0
+      "l": 1
     },
     "Croatia": {
       "w": 2,
@@ -380,6 +382,13 @@
     "mostGoalsConceded": null
   },
   "MATCHES": [
+    {
+      "a": "England",
+      "sa": 1,
+      "b": "Argentina",
+      "sb": 2,
+      "note": "Semi-Final · Lautaro Martínez 90+3 header sinks England; holders Argentina meet Spain in Sunday's final"
+    },
     {
       "a": "France",
       "sa": 0,
