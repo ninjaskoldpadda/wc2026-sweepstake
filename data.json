@@ -1,5 +1,5 @@
 {
-  "LAST_SYNC": "Fri 17 July, evening sync — no new matches; bronze match Sat, final Sun",
+  "LAST_SYNC": "Sat 18 July, 21:40 — bronze match France vs England in progress; score added once final",
   "STAGE": "Final — Spain vs Argentina",
   "ELIMINATED": [
     "France",
@@ -50,9 +50,9 @@
     "England"
   ],
   "NEXT_MATCH": {
-    "label": "France 🇫🇷 vs 🏴󠁧󠁢󠁥󠁮󠁧󠁿 England",
-    "note": "Third-place play-off · Hard Rock Stadium, Miami",
-    "kickoff": "2026-07-18T21:00:00Z"
+    "label": "Spain 🇪🇸 vs 🇦🇷 Argentina",
+    "note": "Final · MetLife Stadium, New Jersey",
+    "kickoff": "2026-07-19T19:00:00Z"
   },
   "BRACKET": {
     "Round of 32": [
