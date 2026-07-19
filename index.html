@@ -447,7 +447,11 @@ function computeStandings(){
   return PLAYERS.map((p,i)=>{
     const teamPts = p.teams.map(t=>({t,pts:matchPtsTeam(t),out:eliminated.has(t)}));
     const matchPts = teamPts.reduce((s,x)=>s+x.pts,0);
-    const bonuses = BONUSES.filter(b=>AWARDS[b.key] && owner[AWARDS[b.key]]===i).map(b=>({...b,team:AWARDS[b.key]}));
+    const bonuses = BONUSES.flatMap(b=>{
+      const v = AWARDS[b.key]; if(!v) return [];
+      const ts = Array.isArray(v) ? v : [v];   // an award can be shared (tie) — array of teams
+      return ts.filter(t=>owner[t]===i).map(t=>({...b,team:t}));
+    });
     const bonusPts = bonuses.reduce((s,b)=>s+b.pts,0);
     return {p,i,teamPts,matchPts,bonuses,bonusPts,total:matchPts+bonusPts};
   }).sort((a,b)=> b.total-a.total || b.matchPts-a.matchPts || a.p.name.localeCompare(b.p.name));
@@ -488,7 +492,7 @@ function render(){
   tb.innerHTML = standings.map((s,idx)=>{
     const lead = (idx===0 && s.total>0) ? 'lead':'';
     const chips = s.teamPts.map(x=>`<span class="tchip ${x.out?'out':''}">${FLAG[x.t]||'🏳️'} ${x.t} <b>${x.pts}</b></span>`).join('');
-    const badges = s.bonuses.map(b=>`<span class="bbadge">${b.label} +${b.pts}</span>`).join('');
+    const badges = s.bonuses.map(b=>`<span class="bbadge">${b.label} ${FLAG[b.team]||''} +${b.pts}</span>`).join('');
     return `<div class="prow ${lead}" style="--pc:${s.p.color}">
       <div class="prank">${idx+1}</div>
       <div class="pmain">
