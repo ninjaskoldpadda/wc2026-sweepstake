@@ -1,6 +1,6 @@
 {
-  "LAST_SYNC": "Sun 19 July, 18:05 — all results verified; Spain vs Argentina final kicks off 21:00 CEST tonight",
-  "STAGE": "Final — Spain vs Argentina",
+  "LAST_SYNC": "Sun 19 July, 22:50 UTC — FULL TIME, FOREVER",
+  "STAGE": "Tournament complete — Spain are World Champions",
   "ELIMINATED": [
     "France",
     "Egypt",
@@ -47,13 +47,10 @@
     "Belgium",
     "Switzerland",
     "Norway",
-    "England"
+    "England",
+    "Argentina"
   ],
-  "NEXT_MATCH": {
-    "label": "Spain 🇪🇸 vs 🇦🇷 Argentina",
-    "note": "Final · MetLife Stadium, New Jersey",
-    "kickoff": "2026-07-19T19:00:00Z"
-  },
+  "NEXT_MATCH": null,
   "BRACKET": {
     "Round of 32": [
       "Mexico",
@@ -127,7 +124,9 @@
       "Spain",
       "Argentina"
     ],
-    "Champion": []
+    "Champion": [
+      "Spain"
+    ]
   },
   "RESULTS": {
     "Mexico": {
@@ -251,7 +250,7 @@
       "l": 3
     },
     "Spain": {
-      "w": 6,
+      "w": 7,
       "d": 1,
       "l": 0
     },
@@ -313,7 +312,7 @@
     "Argentina": {
       "w": 7,
       "d": 0,
-      "l": 0
+      "l": 1
     },
     "Algeria": {
       "w": 1,
@@ -372,16 +371,27 @@
     }
   },
   "AWARDS": {
-    "champion": null,
-    "runnerUp": null,
+    "champion": "Spain",
+    "runnerUp": "Argentina",
     "third": "England",
-    "goldenBoot": null,
-    "playerOfTournament": null,
-    "bestGoalkeeper": null,
-    "mostYellowCards": null,
-    "mostGoalsConceded": null
+    "goldenBoot": "France",
+    "playerOfTournament": "Argentina",
+    "bestGoalkeeper": "Spain",
+    "mostYellowCards": "Argentina",
+    "mostGoalsConceded": [
+      "England",
+      "Iraq",
+      "Tunisia"
+    ]
   },
   "MATCHES": [
+    {
+      "a": "Spain",
+      "sa": 1,
+      "b": "Argentina",
+      "sb": 0,
+      "note": "THE FINAL · Ferran Torres 106' wins it in extra time — Spain are champions of the world"
+    },
     {
       "a": "France",
       "sa": 4,
