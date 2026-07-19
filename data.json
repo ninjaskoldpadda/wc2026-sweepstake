@@ -1,5 +1,5 @@
 {
-  "LAST_SYNC": "Sat 18 July, 21:40 — bronze match France vs England in progress; score added once final",
+  "LAST_SYNC": "Sun 19 July, 06:04 — bronze final settled (England 3rd); Spain vs Argentina final tonight",
   "STAGE": "Final — Spain vs Argentina",
   "ELIMINATED": [
     "France",
@@ -293,7 +293,7 @@
     "France": {
       "w": 6,
       "d": 0,
-      "l": 1
+      "l": 2
     },
     "Senegal": {
       "w": 1,
@@ -331,7 +331,7 @@
       "l": 3
     },
     "England": {
-      "w": 5,
+      "w": 6,
       "d": 1,
       "l": 1
     },
@@ -374,7 +374,7 @@
   "AWARDS": {
     "champion": null,
     "runnerUp": null,
-    "third": null,
+    "third": "England",
     "goldenBoot": null,
     "playerOfTournament": null,
     "bestGoalkeeper": null,
@@ -382,6 +382,13 @@
     "mostGoalsConceded": null
   },
   "MATCHES": [
+    {
+      "a": "France",
+      "sa": 4,
+      "b": "England",
+      "sb": 6,
+      "note": "Bronze Final · Saka hat-trick; England survive a France rally in a 10-goal thriller to take third, France finish fourth"
+    },
     {
       "a": "England",
       "sa": 1,
